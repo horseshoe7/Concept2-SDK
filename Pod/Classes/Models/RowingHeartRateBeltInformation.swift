@@ -22,9 +22,9 @@ struct RowingHeartRateBeltInformation: CharacteristicModel, CustomDebugStringCon
   var deviceType:C2HeartRateBeltType
   var beltID:C2HeartRateBeltID
   
-  init(fromData data: NSData) {
-    var arr = [UInt8](count: DataLength, repeatedValue: 0)
-    data.getBytes(&arr, length: DataLength)
+  init(fromData data: Data) {
+    var arr = [UInt8](repeating: 0, count: DataLength)
+    (data as NSData).getBytes(&arr, length: DataLength)
     
     manufacturerID = C2HeartRateBeltManufacturerID(arr[0])
     deviceType = C2HeartRateBeltType(arr[1])
@@ -34,7 +34,7 @@ struct RowingHeartRateBeltInformation: CharacteristicModel, CustomDebugStringCon
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
     performanceMonitor.manufacturerID.value = manufacturerID
     performanceMonitor.deviceType.value = deviceType
     performanceMonitor.beltID.value = beltID
@@ -49,8 +49,8 @@ struct RowingHeartRateBeltInformation: CharacteristicModel, CustomDebugStringCon
 /*
 NSData extension to allow writing of this value
 */
-extension NSData {
-  convenience init(rowingHeartRateBeltInformation:RowingHeartRateBeltInformation) {
+extension Data {
+  init(rowingHeartRateBeltInformation:RowingHeartRateBeltInformation) {
     let arr:[UInt8] = [
       UInt8(rowingHeartRateBeltInformation.manufacturerID),
       UInt8(rowingHeartRateBeltInformation.deviceType),
@@ -59,7 +59,7 @@ extension NSData {
       UInt8(0xFF & (rowingHeartRateBeltInformation.manufacturerID >> 16)),
       UInt8(0xFF & (rowingHeartRateBeltInformation.manufacturerID >> 24))
     ];
-    
-    self.init(bytes: arr, length: arr.count * sizeof(UInt8))
+    self.init(bytes: arr)
+//    (self as NSData).init(bytes: arr, length: arr.count * sizeof(UInt8))
   }
 }

@@ -18,15 +18,15 @@ final class PerformanceMonitorStore {
   //////////////////////////////////////////////////////////////////////////////////////////////////
   var performanceMonitors = Set<PerformanceMonitor>()
 
-  func addPerformanceMonitor(performanceMonitor:PerformanceMonitor) {
+  func addPerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
     performanceMonitors.insert(performanceMonitor)
     
-    NSNotificationCenter.defaultCenter().postNotificationName(
-      PerformanceMonitorStoreDidAddItemNotification,
+    NotificationCenter.default.post(
+      name: Notification.Name(rawValue: PerformanceMonitorStoreDidAddItemNotification),
       object: self)
   }
   
-  func performanceMonitorWithPeripheral(peripheral:CBPeripheral) -> PerformanceMonitor? {
+  func performanceMonitorWithPeripheral(_ peripheral:CBPeripheral) -> PerformanceMonitor? {
     var pm:PerformanceMonitor?
     
     performanceMonitors.forEach { (performanceMonitor:PerformanceMonitor) -> () in
@@ -38,11 +38,11 @@ final class PerformanceMonitorStore {
     return pm
   }
   
-  func removePerformanceMonitor(performanceMonitor:PerformanceMonitor) {
+  func removePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
     performanceMonitors.remove(performanceMonitor)
     
-    NSNotificationCenter.defaultCenter().postNotificationName(
-      PerformanceMonitorStoreDidRemoveItemNotification,
+    NotificationCenter.default.post(
+      name: Notification.Name(rawValue: PerformanceMonitorStoreDidRemoveItemNotification),
       object: self)
   }
 }

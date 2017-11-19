@@ -7,41 +7,41 @@
 //
 
 public enum IntervalType:Int {
-  case Time = 0
-  case Distance
-  case Rest
-  case TimeRestUndefined
-  case DistanceRestUndefined
-  case RestUndefined
-  case Calorie
-  case CalorieRestUndefined
-  case WattMinute
-  case WattMinuteRestUndefined
-  case None = 255
+  case time = 0
+  case distance
+  case rest
+  case timeRestUndefined
+  case distanceRestUndefined
+  case restUndefined
+  case calorie
+  case calorieRestUndefined
+  case wattMinute
+  case wattMinuteRestUndefined
+  case none = 255
   
   var title:String {
     switch self {
-    case .Time:
+    case .time:
       return "Time"
-    case .Distance:
+    case .distance:
       return "Distance"
-    case .Rest:
+    case .rest:
       return "Rest"
-    case .TimeRestUndefined:
+    case .timeRestUndefined:
       return "Time, rest undefined"
-    case .DistanceRestUndefined:
+    case .distanceRestUndefined:
       return "Distance, rest undefined"
-    case .RestUndefined:
+    case .restUndefined:
       return "Rest undefined"
-    case .Calorie:
+    case .calorie:
       return "Calorie"
-    case .CalorieRestUndefined:
+    case .calorieRestUndefined:
       return "Calorie, rest undefined"
-    case .WattMinute:
+    case .wattMinute:
       return "Watt minute"
-    case .WattMinuteRestUndefined:
+    case .wattMinuteRestUndefined:
       return "Watt minute, rest undefined"
-    case .None:
+    case .none:
       return "None"
     }
   }

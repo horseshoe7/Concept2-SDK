@@ -43,9 +43,9 @@ struct RowingAdditionalWorkoutSummaryData: CharacteristicModel, CustomDebugStrin
   var intervalRestTime:C2TimeInterval
   var averageCalories:C2CalorieCount
   
-  init(fromData data: NSData) {
-    var arr = [UInt8](count: DataLength, repeatedValue: 0)
-    data.getBytes(&arr, length: DataLength)
+  init(fromData data: Data) {
+    var arr = [UInt8](repeating: 0, count: DataLength)
+    (data as NSData).getBytes(&arr, length: DataLength)
     
     logEntryDate = 0 // TODO: find date/time format
     logEntryTime = 0
@@ -60,7 +60,7 @@ struct RowingAdditionalWorkoutSummaryData: CharacteristicModel, CustomDebugStrin
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
 //    performanceMonitor.logEntryDate.value = logEntryDate
 //    performanceMonitor.logEntryTime.value = logEntryTime
     performanceMonitor.intervalType.value = intervalType

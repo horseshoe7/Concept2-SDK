@@ -17,13 +17,13 @@ public protocol Disposable {
 /**
  Wraps a variable to allow notifications upon value changes.
  */
-public class Subject<T> {
+open class Subject<T> {
   
   /**
     The value that is to be observered.
     All current observers will be notified when it is assigned to.
    */
-  public var value: T {
+  open var value: T {
     didSet {
       notify()
     }
@@ -32,7 +32,7 @@ public class Subject<T> {
   /**
    Returns true if there are currently observers.
    */
-  public var isObserved:Bool { get { return observers.count > 0 } }
+  open var isObserved:Bool { get { return observers.count > 0 } }
   
   init(value: T) {
     self.value = value
@@ -46,7 +46,7 @@ public class Subject<T> {
     To observe changes in the subject, attach a block.
     When you want observation to end, call `dispose` on the returned Disposable
    */
-  public func attach(observer: (T) -> Void) -> Disposable {
+  open func attach(_ observer: @escaping (T) -> Void) -> Disposable {
     let wrapped = ObserverWrapper(subject: self, function: observer)
     observers.append(wrapped)
     
@@ -56,7 +56,7 @@ public class Subject<T> {
     return wrapped
   }
   
-  func map<U>(transform: (T) -> U) -> Subject<U> {
+  func map<U>(_ transform: @escaping (T) -> U) -> Subject<U> {
     let result: Subject<U> = Subject<U>(value: transform(value))
     result.disposable = self.attach { [weak result] value in
       result?.value = transform(value)
@@ -65,29 +65,29 @@ public class Subject<T> {
     return result
   }
   
-  private func detach(wrappedObserver: ObserverWrapper<T>) {
+  fileprivate func detach(_ wrappedObserver: ObserverWrapper<T>) {
     observers = observers.filter { $0 !== wrappedObserver }
   }
   
-  private func notify() {
+  fileprivate func notify() {
     for observer in observers {
       observer.update(value)
     }
   }
   
-  private var disposable: Disposable?
-  private var observers: [ObserverWrapper<T>] = []
+  fileprivate var disposable: Disposable?
+  fileprivate var observers: [ObserverWrapper<T>] = []
   
 }
 
 // MARK: -
 private class ObserverWrapper<T>: Disposable {
-  init(subject: Subject<T>, function: (T) -> Void) {
+  init(subject: Subject<T>, function: @escaping (T) -> Void) {
     self.subject = subject
     self.function = function
   }
   
-  func update(value: T) {
+  func update(_ value: T) {
     function(value)
   }
   

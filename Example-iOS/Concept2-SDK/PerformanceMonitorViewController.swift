@@ -19,51 +19,51 @@ class PerformanceMonitorViewController: UIViewController {
   var distanceDisposable:Disposable?
   @IBOutlet var distanceLabel:UILabel!
   
-  override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     attachObservers()
     updateUI()
   }
   
-  override func viewDidDisappear(animated: Bool) {
+  override func viewDidDisappear(_ animated: Bool) {
     super.viewDidDisappear(animated)
     detachObservers()
   }
   
-  @IBAction func dismissAction(sender:AnyObject?) {
-    self.dismissViewControllerAnimated(true) { () -> Void in
+  @IBAction func dismissAction(_ sender:AnyObject?) {
+    self.dismiss(animated: true) { () -> Void in
     }
   }
   
   // MARK: View Updates
-  private func updateUI() {
+  fileprivate func updateUI() {
     nameLabel.text = performanceMonitor?.peripheralName ?? "Unknown"
   }
   
   // MARK: Notifications
-  private func attachObservers() {
+  fileprivate func attachObservers() {
     detachObservers()
     
     strokesPerMinuteDisposable = performanceMonitor?.strokeRate.attach({
       [weak self] (strokeRate:C2StrokeRate) -> Void in
       if let weakSelf = self {
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//        DispatchQueue.main.async(DispatchQueue.mainexecute: { () -> Void in
           weakSelf.strokesPerMinuteLabel.text = "\(strokeRate)"
-        })
+//        })
       }
     })
     
     distanceDisposable = performanceMonitor?.distance.attach({
       [weak self] (distance:C2Distance) -> Void in
       if let weakSelf = self {
-        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+//        DispatchQueue.main.async(DispatchQueue.mainexecute: { () -> Void in
           weakSelf.distanceLabel.text = "\(distance)"
-        })
+//        })
       }
     })
   }
   
-  private func detachObservers() {
+  fileprivate func detachObservers() {
     nameDisposable?.dispose()
     strokesPerMinuteDisposable?.dispose()
     distanceDisposable?.dispose()

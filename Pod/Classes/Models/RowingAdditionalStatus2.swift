@@ -40,9 +40,9 @@ struct RowingAdditionalStatus2: CharacteristicModel, CustomDebugStringConvertibl
   var lastSplitTime:C2TimeInterval
   var lastSplitDistance:C2Distance
   
-  init(fromData data: NSData) {
-    var arr = [UInt8](count: DataLength, repeatedValue: 0)
-    data.getBytes(&arr, length: DataLength)
+  init(fromData data: Data) {
+    var arr = [UInt8](repeating: 0, count: DataLength)
+    (data as NSData).getBytes(&arr, length: DataLength)
     
     elapsedTime = C2TimeInterval(timeWithLow: UInt32(arr[0]), mid: UInt32(arr[1]), high: UInt32(arr[2]))
     intervalCount = C2IntervalCount(arr[3])
@@ -55,7 +55,7 @@ struct RowingAdditionalStatus2: CharacteristicModel, CustomDebugStringConvertibl
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.intervalCount.value = intervalCount
     performanceMonitor.totalCalories.value = totalCalories

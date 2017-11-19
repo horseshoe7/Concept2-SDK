@@ -7,20 +7,20 @@
 //
 
 public enum WorkoutDurationType:Int {
-  case TimeDuration = 0
-  case CaloriesDuration = 0x40
-  case DistanceDuration = 0x80
-  case WattsDuration = 0xC0
+  case timeDuration = 0
+  case caloriesDuration = 0x40
+  case distanceDuration = 0x80
+  case wattsDuration = 0xC0
   
   var title:String {
     switch self {
-    case .TimeDuration:
+    case .timeDuration:
       return "Time duration"
-    case .CaloriesDuration:
+    case .caloriesDuration:
       return "Calories duration"
-    case .DistanceDuration:
+    case .distanceDuration:
       return "Distance duration"
-    case .WattsDuration:
+    case .wattsDuration:
       return "Watts duration"
     }
   }

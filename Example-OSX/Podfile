@@ -1,13 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :osx, '10.10'
+platform :osx, '10.13'
 
 use_frameworks!
 
-target 'Example-OSX', :exclusive => true do
+target 'Example-OSX' do
   pod "Concept2-SDK", :path => "../"
 end
 
-target 'Example-OSXTests', :exclusive => true do
+target 'Example-OSXTests' do
   pod "Concept2-SDK", :path => "../"
 end

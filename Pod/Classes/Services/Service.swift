@@ -13,21 +13,21 @@ import CoreBluetooth
  */
 
 public enum Service {
-  case DeviceDiscovery
-  case DeviceInformation
-  case Control
-  case Rowing
+  case deviceDiscovery
+  case deviceInformation
+  case control
+  case rowing
   
   init?(uuid:CBUUID) {
     switch uuid {
-    case DeviceDiscovery.UUID:
-      self = .DeviceDiscovery
-    case DeviceInformation.UUID:
-      self = .DeviceInformation
-    case Control.UUID:
-      self = .Control
-    case Rowing.UUID:
-      self = .Rowing
+    case Service.deviceDiscovery.UUID:
+      self = .deviceDiscovery
+    case Service.deviceInformation.UUID:
+      self = .deviceInformation
+    case Service.control.UUID:
+      self = .control
+    case Service.rowing.UUID:
+      self = .rowing
     default:
       return nil
     }
@@ -35,55 +35,55 @@ public enum Service {
   
   var UUID:CBUUID {
     switch self {
-    case .DeviceDiscovery:
+    case .deviceDiscovery:
       return CBUUID(string: "CE060000-43E5-11E4-916C-0800200C9A66")
-    case .DeviceInformation:
+    case .deviceInformation:
       return CBUUID(string: "CE060010-43E5-11E4-916C-0800200C9A66")
-    case .Control:
+    case .control:
       return CBUUID(string: "CE060020-43E5-11E4-916C-0800200C9A66")
-    case .Rowing:
+    case .rowing:
       return CBUUID(string: "CE060030-43E5-11E4-916C-0800200C9A66")
     }
   }
   
   var characteristicUUIDs:[CBUUID]? {
     switch self {
-    case .DeviceInformation:
+    case .deviceInformation:
       return [
-        DeviceInformationCharacteristic.SerialNumber.UUID,
-        DeviceInformationCharacteristic.HardwareRevision.UUID,
-        DeviceInformationCharacteristic.FirmwareRevision.UUID,
-        DeviceInformationCharacteristic.ManufacturerName.UUID]
-    case .Control:
+        DeviceInformationCharacteristic.serialNumber.UUID,
+        DeviceInformationCharacteristic.hardwareRevision.UUID,
+        DeviceInformationCharacteristic.firmwareRevision.UUID,
+        DeviceInformationCharacteristic.manufacturerName.UUID]
+    case .control:
       return [
-        ControlCharacteristic.Response.UUID,
-        ControlCharacteristic.Command.UUID]
-    case .Rowing:
+        ControlCharacteristic.response.UUID,
+        ControlCharacteristic.command.UUID]
+    case .rowing:
       return [
-        RowingCharacteristic.GeneralStatus.UUID,
-        RowingCharacteristic.AdditionalStatus1.UUID,
-        RowingCharacteristic.AdditionalStatus2.UUID,
-        RowingCharacteristic.StatusSampleRate.UUID,
-        RowingCharacteristic.StrokeData.UUID,
-        RowingCharacteristic.AdditionalStrokeData.UUID,
-        RowingCharacteristic.IntervalData.UUID,
-        RowingCharacteristic.AdditionalIntervalData.UUID,
-        RowingCharacteristic.WorkoutSummaryData.UUID,
-        RowingCharacteristic.AdditionalWorkoutSummaryData.UUID,
-        RowingCharacteristic.HeartRateBeltInformation.UUID,
-        RowingCharacteristic.MutliplexedInformation.UUID]
+        RowingCharacteristic.generalStatus.UUID,
+        RowingCharacteristic.additionalStatus1.UUID,
+        RowingCharacteristic.additionalStatus2.UUID,
+        RowingCharacteristic.statusSampleRate.UUID,
+        RowingCharacteristic.strokeData.UUID,
+        RowingCharacteristic.additionalStrokeData.UUID,
+        RowingCharacteristic.intervalData.UUID,
+        RowingCharacteristic.additionalIntervalData.UUID,
+        RowingCharacteristic.workoutSummaryData.UUID,
+        RowingCharacteristic.additionalWorkoutSummaryData.UUID,
+        RowingCharacteristic.heartRateBeltInformation.UUID,
+        RowingCharacteristic.mutliplexedInformation.UUID]
     default:
       return nil
     }
   }
   
-  func characteristic(uuid uuid:CBUUID) -> Characteristic? {
+  func characteristic(uuid:CBUUID) -> Characteristic? {
     switch self {
-    case .DeviceInformation:
+    case .deviceInformation:
       return DeviceInformationCharacteristic(uuid: uuid)
-    case .Control:
+    case .control:
       return ControlCharacteristic(uuid: uuid)
-    case .Rowing:
+    case .rowing:
       return RowingCharacteristic(uuid: uuid)
     default:
       return nil

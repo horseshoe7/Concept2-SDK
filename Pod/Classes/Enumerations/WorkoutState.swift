@@ -7,18 +7,18 @@
 //
 
 public enum WorkoutState:Int {
-  case WaitToBegin = 0
-  case WorkoutRow
-  case CountdownPause
-  case IntervalRest
-  case IntervalWorkTime
-  case IntervalWorkDistance
-  case IntervalRestEndToWorkTime
-  case IntervalRestEndToWorkDistance
-  case IntervalWorkTimeToRest
-  case IntervalWorkDistanceToRest
-  case WorkoutEnd
-  case Terminate
-  case WorkoutLogged
-  case Rearm
+  case waitToBegin = 0
+  case workoutRow
+  case countdownPause
+  case intervalRest
+  case intervalWorkTime
+  case intervalWorkDistance
+  case intervalRestEndToWorkTime
+  case intervalRestEndToWorkDistance
+  case intervalWorkTimeToRest
+  case intervalWorkDistanceToRest
+  case workoutEnd
+  case terminate
+  case workoutLogged
+  case rearm
 }

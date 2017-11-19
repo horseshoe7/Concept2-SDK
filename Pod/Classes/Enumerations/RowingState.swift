@@ -7,14 +7,14 @@
 //
 
 public enum RowingState:Int {
-  case Inactive = 0
-  case Active
+  case inactive = 0
+  case active
   
   var title:String {
     switch self {
-    case .Inactive:
+    case .inactive:
       return "Inactive"
-    case .Active:
+    case .active:
       return "Active"
     }
   }

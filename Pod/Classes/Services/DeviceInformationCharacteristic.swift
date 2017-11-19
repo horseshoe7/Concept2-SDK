@@ -9,21 +9,21 @@
 import CoreBluetooth
 
 public enum DeviceInformationCharacteristic:Characteristic {
-  case SerialNumber
-  case HardwareRevision
-  case FirmwareRevision
-  case ManufacturerName
+  case serialNumber
+  case hardwareRevision
+  case firmwareRevision
+  case manufacturerName
   
   init?(uuid:CBUUID) {
     switch uuid {
-    case SerialNumber.UUID:
-      self = .SerialNumber
-    case HardwareRevision.UUID:
-      self = .HardwareRevision
-    case FirmwareRevision.UUID:
-      self = .FirmwareRevision
-    case ManufacturerName.UUID:
-      self = .ManufacturerName
+    case DeviceInformationCharacteristic.serialNumber.UUID:
+      self = .serialNumber
+    case DeviceInformationCharacteristic.hardwareRevision.UUID:
+      self = .hardwareRevision
+    case DeviceInformationCharacteristic.firmwareRevision.UUID:
+      self = .firmwareRevision
+    case DeviceInformationCharacteristic.manufacturerName.UUID:
+      self = .manufacturerName
     default:
       return nil
     }
@@ -31,26 +31,26 @@ public enum DeviceInformationCharacteristic:Characteristic {
   
   var UUID:CBUUID {
     switch self {
-    case .SerialNumber:
+    case .serialNumber:
       return CBUUID(string: "CE060012-43E5-11E4-916C-0800200C9A66")
-    case .HardwareRevision:
+    case .hardwareRevision:
       return CBUUID(string: "CE060013-43E5-11E4-916C-0800200C9A66")
-    case .FirmwareRevision:
+    case .firmwareRevision:
       return CBUUID(string: "CE060014-43E5-11E4-916C-0800200C9A66")
-    case .ManufacturerName:
+    case .manufacturerName:
       return CBUUID(string: "CE060015-43E5-11E4-916C-0800200C9A66")
     }
   }
   
-  func parse(data data:NSData?) -> CharacteristicModel? {
+  func parse(data:Data?) -> CharacteristicModel? {
     switch self {
-    case .SerialNumber:
+    case .serialNumber:
       return nil
-    case .HardwareRevision:
+    case .hardwareRevision:
       return nil
-    case .FirmwareRevision:
+    case .firmwareRevision:
       return nil
-    case .ManufacturerName:
+    case .manufacturerName:
       return nil
     }
   }

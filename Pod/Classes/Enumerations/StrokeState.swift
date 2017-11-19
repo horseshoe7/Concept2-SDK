@@ -7,23 +7,23 @@
 //
 
 public enum StrokeState:Int {
-  case WaitingForWheelToReachMinSpeed = 0
-  case WaitingForWheelToAccelerate
-  case Driving
-  case DwellingAfterDrive
-  case Recovery
+  case waitingForWheelToReachMinSpeed = 0
+  case waitingForWheelToAccelerate
+  case driving
+  case dwellingAfterDrive
+  case recovery
   
   var title:String {
     switch self {
-    case .WaitingForWheelToReachMinSpeed:
+    case .waitingForWheelToReachMinSpeed:
       return "Waiting for wheel to reach minimum speed"
-    case .WaitingForWheelToAccelerate:
+    case .waitingForWheelToAccelerate:
       return "Waiting for wheel to accelerate"
-    case .Driving:
+    case .driving:
       return "Driving"
-    case .DwellingAfterDrive:
+    case .dwellingAfterDrive:
       return "Dwelling after drive"
-    case .Recovery:
+    case .recovery:
       return "Recovery"
     }
   }

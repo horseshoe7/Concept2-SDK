@@ -7,44 +7,44 @@
 //
 
 public enum WorkoutType:Int {
-  case JustRowNoSplits = 0
-  case JustRowSplits
-  case FixedDistanceNoSplits
-  case FixedDistanceSplits
-  case FixedTimeNoSplits
-  case FixedTimeSplits
-  case FixedTimeInterval
-  case FixedDistanceInterval
-  case VariableInterval
-  case VariableUndefinedRestInterval
-  case FixedCalorie
-  case FixedWattMinutes
+  case justRowNoSplits = 0
+  case justRowSplits
+  case fixedDistanceNoSplits
+  case fixedDistanceSplits
+  case fixedTimeNoSplits
+  case fixedTimeSplits
+  case fixedTimeInterval
+  case fixedDistanceInterval
+  case variableInterval
+  case variableUndefinedRestInterval
+  case fixedCalorie
+  case fixedWattMinutes
   
   var title:String {
     switch self {
-    case .JustRowNoSplits:
+    case .justRowNoSplits:
       return "Just row, no splits"
-    case .JustRowSplits:
+    case .justRowSplits:
       return "Just row, with splits"
-    case .FixedDistanceNoSplits:
+    case .fixedDistanceNoSplits:
       return "Fixed distance, no splits"
-    case .FixedDistanceSplits:
+    case .fixedDistanceSplits:
       return "Fixed distance, with splits"
-    case .FixedTimeNoSplits:
+    case .fixedTimeNoSplits:
       return "Fixed time, no splits"
-    case .FixedTimeSplits:
+    case .fixedTimeSplits:
       return "Fixed time, with splits"
-    case .FixedTimeInterval:
+    case .fixedTimeInterval:
       return "Fixed time intervals"
-    case .FixedDistanceInterval:
+    case .fixedDistanceInterval:
       return "Fixed distance intervals"
-    case .VariableInterval:
+    case .variableInterval:
       return "Variable intervals"
-    case .VariableUndefinedRestInterval:
+    case .variableUndefinedRestInterval:
       return "Variable, with undefined rest intervals"
-    case .FixedCalorie:
+    case .fixedCalorie:
       return "Fixed calorie"
-    case .FixedWattMinutes:
+    case .fixedWattMinutes:
       return "Fixed watt-minutes"
     }
   }

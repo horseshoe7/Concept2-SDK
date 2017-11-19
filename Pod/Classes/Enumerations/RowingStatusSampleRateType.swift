@@ -7,20 +7,20 @@
 //
 
 public enum RowingStatusSampleRateType:UInt8 {
-  case OneSecond = 0
-  case HalfSecond = 1
-  case QuarterSecond = 2
-  case TenthSecond = 3
+  case oneSecond = 0
+  case halfSecond = 1
+  case quarterSecond = 2
+  case tenthSecond = 3
   
   var title:String {
     switch self {
-    case .OneSecond:
+    case .oneSecond:
       return "1 sec"
-    case .HalfSecond:
+    case .halfSecond:
       return "500 ms"
-    case .QuarterSecond:
+    case .quarterSecond:
       return "250 ms"
-    case .TenthSecond:
+    case .tenthSecond:
       return "100 ms"
     }
   }
