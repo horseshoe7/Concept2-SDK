@@ -32,6 +32,8 @@ final class CentralManagerDelegate:NSObject, CBCentralManagerDelegate {
     case .poweredOn:
       print("[BluetoothManager]state: powered on")
       break
+    @unknown default:
+      fatalError("[BluetoothManager]state: unknown")
     }
     
     BluetoothManager.isReady.value = (central.state == .poweredOn)

@@ -39,7 +39,7 @@ struct RowingStatusSampleRate: CharacteristicModel, CustomDebugStringConvertible
 extension Data {
   init(rowingStatusSampleRate:RowingStatusSampleRateType) {
     let arr:[UInt8] = [rowingStatusSampleRate.rawValue];
-    self.init(bytes: arr)
+    self.init(arr)
 //    (self as NSData).init(bytes: arr, length: arr.count * sizeof(UInt8))
   }
 }

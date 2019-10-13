@@ -59,7 +59,7 @@ extension Data {
       UInt8(0xFF & (rowingHeartRateBeltInformation.manufacturerID >> 16)),
       UInt8(0xFF & (rowingHeartRateBeltInformation.manufacturerID >> 24))
     ];
-    self.init(bytes: arr)
+    self.init(arr)
 //    (self as NSData).init(bytes: arr, length: arr.count * sizeof(UInt8))
   }
 }

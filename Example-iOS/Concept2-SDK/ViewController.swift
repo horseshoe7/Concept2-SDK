@@ -88,7 +88,7 @@ class ViewController: UIViewController {
   func performanceMonitorStateDidUpdate(_ performanceMonitor:PerformanceMonitor) {
     print("PerformanceMonitorStateDidUpdate: \(performanceMonitor.peripheralName)")
     
-    if let index = performanceMonitors.index(of: performanceMonitor) {
+    if let index = performanceMonitors.firstIndex(of: performanceMonitor) {
         tableView.reloadRows(at:[IndexPath(item: index, section: 0)],
             with: .automatic)
     }

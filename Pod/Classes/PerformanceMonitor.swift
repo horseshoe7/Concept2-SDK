@@ -182,9 +182,7 @@ public func ==(lhs:PerformanceMonitor, rhs:PerformanceMonitor) -> Bool {
 
 // MARK: Hashable
 extension PerformanceMonitor: Hashable {
-  public var hashValue: Int {
-    get {
-      return peripheral.hashValue
-    }
+  public func hash(into hasher: inout Hasher) {
+    peripheral.hash(into: &hasher)
   }
 }
