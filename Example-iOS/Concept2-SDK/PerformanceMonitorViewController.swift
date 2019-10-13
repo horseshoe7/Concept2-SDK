@@ -14,10 +14,10 @@ class PerformanceMonitorViewController: UIViewController {
   
   var nameDisposable:Disposable?
   @IBOutlet var nameLabel:UILabel!
-  var strokesPerMinuteDisposable:Disposable?
-  @IBOutlet var strokesPerMinuteLabel:UILabel!
-  var distanceDisposable:Disposable?
-  @IBOutlet var distanceLabel:UILabel!
+  var beatsPerMinuteDisposable:Disposable?
+  @IBOutlet var beatsPerMinuteLabel:UILabel!
+  var wattsDisposable:Disposable?
+  @IBOutlet var wattsLabel:UILabel!
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -44,28 +44,28 @@ class PerformanceMonitorViewController: UIViewController {
   fileprivate func attachObservers() {
     detachObservers()
     
-    strokesPerMinuteDisposable = performanceMonitor?.strokeRate.attach({
-      [weak self] (strokeRate:C2StrokeRate) -> Void in
+    beatsPerMinuteDisposable = performanceMonitor?.heartRate.attach({
+      [weak self] (strokeRate:C2HeartRate) -> Void in
       if let weakSelf = self {
-//        DispatchQueue.main.async(DispatchQueue.mainexecute: { () -> Void in
-          weakSelf.strokesPerMinuteLabel.text = "\(strokeRate)"
-//        })
+        DispatchQueue.main.async {
+          weakSelf.beatsPerMinuteLabel.text = "\(strokeRate)"
+        }
       }
     })
     
-    distanceDisposable = performanceMonitor?.distance.attach({
-      [weak self] (distance:C2Distance) -> Void in
+    wattsDisposable = performanceMonitor?.strokePower.attach({
+      [weak self] (distance:C2Power) -> Void in
       if let weakSelf = self {
-//        DispatchQueue.main.async(DispatchQueue.mainexecute: { () -> Void in
-          weakSelf.distanceLabel.text = "\(distance)"
-//        })
+        DispatchQueue.main.async {
+          weakSelf.wattsLabel.text = "\(distance)"
+        }
       }
     })
   }
   
   fileprivate func detachObservers() {
     nameDisposable?.dispose()
-    strokesPerMinuteDisposable?.dispose()
-    distanceDisposable?.dispose()
+    beatsPerMinuteDisposable?.dispose()
+    wattsDisposable?.dispose()
   }
 }
