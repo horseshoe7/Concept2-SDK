@@ -167,14 +167,16 @@ public class PlotStripView: UIView {
     }
     
     private func commonInit() {
-        createDisplayLink()
+        //createDisplayLink()
         applyDefaults()
     }
     
+    private var displayLink: CADisplayLink?
     private func createDisplayLink() {
         let displayLink = CADisplayLink(target: self, selector: #selector(step))
         displayLink.preferredFramesPerSecond = 30
         displayLink.add(to: .current, forMode: .default)
+        self.displayLink = displayLink
     }
     
     private func applyDefaults() {
@@ -200,6 +202,10 @@ public class PlotStripView: UIView {
     
     private func updateDisplay() {
         _isViewDirty = true
+        
+        if self.displayLink == nil {
+            self.setNeedsDisplay()
+        }
     }
     
     @objc
