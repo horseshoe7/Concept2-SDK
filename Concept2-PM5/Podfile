@@ -1,0 +1,29 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+inhibit_all_warnings!
+
+def common_pods
+    pod 'XCGLogger', '~> 7.0.0'
+end
+
+# There are no targets called "Concept2SDK" in any Xcode projects
+abstract_target 'Concept2SDK' do
+
+    use_frameworks!
+
+    common_pods
+
+    # Has its own copy of the common_pods
+    target 'Concept2SDK-iOSDemo' do
+
+    end
+    
+    target 'Concept2-PM5' do
+    
+        target 'Concept2-PM5Tests' do
+            inherit! :search_paths
+        end
+    end
+end
+

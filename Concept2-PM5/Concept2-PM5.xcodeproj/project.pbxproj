@@ -1,0 +1,1042 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FC950F975949D2D92125E36 /* Pods_Concept2_PM5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB30E26B4552DD68206EEED /* Pods_Concept2_PM5Tests.framework */; };
+		B1E474D3E5E03123D38233F9 /* Pods_Concept2SDK_Concept2SDK_iOSDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC1EC31B33E55DBE36112E35 /* Pods_Concept2SDK_Concept2SDK_iOSDemo.framework */; };
+		DCF305312567B88900D95CB0 /* Concept2_PM5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF305272567B88900D95CB0 /* Concept2_PM5.framework */; };
+		DCF305362567B88900D95CB0 /* Concept2_PM5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305352567B88900D95CB0 /* Concept2_PM5Tests.swift */; };
+		DCF305382567B88900D95CB0 /* Concept2_PM5.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF3052A2567B88900D95CB0 /* Concept2_PM5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCF305912567B93800D95CB0 /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3055D2567B93800D95CB0 /* IntervalType.swift */; };
+		DCF305922567B93800D95CB0 /* WorkoutDurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3055E2567B93800D95CB0 /* WorkoutDurationType.swift */; };
+		DCF305932567B93800D95CB0 /* RowingStatusSampleRateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3055F2567B93800D95CB0 /* RowingStatusSampleRateType.swift */; };
+		DCF305942567B93800D95CB0 /* StrokeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305602567B93800D95CB0 /* StrokeState.swift */; };
+		DCF305952567B93800D95CB0 /* WorkoutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305612567B93800D95CB0 /* WorkoutState.swift */; };
+		DCF305962567B93800D95CB0 /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305622567B93800D95CB0 /* WorkoutType.swift */; };
+		DCF305972567B93800D95CB0 /* RowingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305632567B93800D95CB0 /* RowingState.swift */; };
+		DCF305982567B93800D95CB0 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305642567B93800D95CB0 /* BluetoothManager.swift */; };
+		DCF3059A2567B93800D95CB0 /* PerformanceMonitorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305672567B93800D95CB0 /* PerformanceMonitorStore.swift */; };
+		DCF3059B2567B93800D95CB0 /* RowingAdditionalStatus1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305692567B93800D95CB0 /* RowingAdditionalStatus1.swift */; };
+		DCF3059C2567B93800D95CB0 /* RowingGeneralStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3056A2567B93800D95CB0 /* RowingGeneralStatus.swift */; };
+		DCF3059D2567B93800D95CB0 /* RowingHeartRateBeltInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3056B2567B93800D95CB0 /* RowingHeartRateBeltInformation.swift */; };
+		DCF3059E2567B93800D95CB0 /* RowingStatusSampleRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3056C2567B93800D95CB0 /* RowingStatusSampleRate.swift */; };
+		DCF3059F2567B93800D95CB0 /* RowingAdditionalStatus2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3056D2567B93800D95CB0 /* RowingAdditionalStatus2.swift */; };
+		DCF305A02567B93800D95CB0 /* RowingWorkoutSummaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3056E2567B93800D95CB0 /* RowingWorkoutSummaryData.swift */; };
+		DCF305A12567B93800D95CB0 /* CSAFECommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3056F2567B93800D95CB0 /* CSAFECommand.swift */; };
+		DCF305A22567B93800D95CB0 /* RowingAdditionalIntervalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305702567B93800D95CB0 /* RowingAdditionalIntervalData.swift */; };
+		DCF305A32567B93800D95CB0 /* RowingIntervalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305712567B93800D95CB0 /* RowingIntervalData.swift */; };
+		DCF305A42567B93800D95CB0 /* RowingAdditionalStrokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305722567B93800D95CB0 /* RowingAdditionalStrokeData.swift */; };
+		DCF305A52567B93800D95CB0 /* CharacteristicModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305732567B93800D95CB0 /* CharacteristicModelProtocol.swift */; };
+		DCF305A62567B93800D95CB0 /* RowingAdditionalWorkoutSummaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305742567B93800D95CB0 /* RowingAdditionalWorkoutSummaryData.swift */; };
+		DCF305A72567B93800D95CB0 /* RowingStrokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305752567B93800D95CB0 /* RowingStrokeData.swift */; };
+		DCF305A82567B93800D95CB0 /* C2IntervalSize+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305772567B93800D95CB0 /* C2IntervalSize+Parsing.swift */; };
+		DCF305A92567B93800D95CB0 /* C2CalorieCount+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305782567B93800D95CB0 /* C2CalorieCount+Parsing.swift */; };
+		DCF305AA2567B93800D95CB0 /* C2DriveLength+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305792567B93800D95CB0 /* C2DriveLength+Parsing.swift */; };
+		DCF305AB2567B93800D95CB0 /* C2HeartRateBeltID+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3057A2567B93800D95CB0 /* C2HeartRateBeltID+Parsing.swift */; };
+		DCF305AC2567B93800D95CB0 /* C2Speed+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3057B2567B93800D95CB0 /* C2Speed+Parsing.swift */; };
+		DCF305AD2567B93800D95CB0 /* C2Power+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3057C2567B93800D95CB0 /* C2Power+Parsing.swift */; };
+		DCF305AE2567B93800D95CB0 /* C2DriveForce+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3057D2567B93800D95CB0 /* C2DriveForce+Parsing.swift */; };
+		DCF305AF2567B93800D95CB0 /* C2StrokeCount+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3057E2567B93800D95CB0 /* C2StrokeCount+Parsing.swift */; };
+		DCF305B02567B93800D95CB0 /* C2Pace+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3057F2567B93800D95CB0 /* C2Pace+Parsing.swift */; };
+		DCF305B12567B93800D95CB0 /* C2Work+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305802567B93800D95CB0 /* C2Work+Parsing.swift */; };
+		DCF305B22567B93800D95CB0 /* C2TimeInterval+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305812567B93800D95CB0 /* C2TimeInterval+Parsing.swift */; };
+		DCF305B32567B93800D95CB0 /* C2Distance+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305822567B93800D95CB0 /* C2Distance+Parsing.swift */; };
+		DCF305B42567B93800D95CB0 /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305832567B93800D95CB0 /* PerformanceMonitor.swift */; };
+		DCF305B52567B93800D95CB0 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305842567B93800D95CB0 /* Subject.swift */; };
+		DCF305B62567B93800D95CB0 /* CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305862567B93800D95CB0 /* CentralManagerDelegate.swift */; };
+		DCF305B72567B93800D95CB0 /* PeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305872567B93800D95CB0 /* PeripheralDelegate.swift */; };
+		DCF305B82567B93800D95CB0 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305882567B93800D95CB0 /* Types.swift */; };
+		DCF305B92567B93800D95CB0 /* RowingCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3058A2567B93800D95CB0 /* RowingCharacteristic.swift */; };
+		DCF305BA2567B93800D95CB0 /* DeviceInformationCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3058B2567B93800D95CB0 /* DeviceInformationCharacteristic.swift */; };
+		DCF305BB2567B93800D95CB0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3058C2567B93800D95CB0 /* Service.swift */; };
+		DCF305BC2567B93800D95CB0 /* ControlCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3058D2567B93800D95CB0 /* ControlCharacteristic.swift */; };
+		DCF305BD2567B93800D95CB0 /* Characteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3058E2567B93800D95CB0 /* Characteristic.swift */; };
+		DCF305EB2567BCE800D95CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305DF2567BCE800D95CB0 /* ViewController.swift */; };
+		DCF305EC2567BCE800D95CB0 /* PerformanceMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305E02567BCE800D95CB0 /* PerformanceMonitorViewController.swift */; };
+		DCF305ED2567BCE800D95CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305E12567BCE800D95CB0 /* AppDelegate.swift */; };
+		DCF305EE2567BCE800D95CB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF305E42567BCE800D95CB0 /* LaunchScreen.xib */; };
+		DCF305EF2567BCE800D95CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF305E62567BCE800D95CB0 /* Main.storyboard */; };
+		DCF305F12567BCE800D95CB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF305E92567BCE800D95CB0 /* Images.xcassets */; };
+		DCF305F42567BD3F00D95CB0 /* ApplicationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305F32567BD3F00D95CB0 /* ApplicationLog.swift */; };
+		DCF305F72567BD7400D95CB0 /* FrameworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305F62567BD7400D95CB0 /* FrameworkLog.swift */; };
+		E0B680549CD8E1F76DF25D62 /* Pods_Concept2SDK_Concept2_PM5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61721C9CACE4C32F25A42C45 /* Pods_Concept2SDK_Concept2_PM5.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCF305322567B88900D95CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF3051E2567B88900D95CB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF305262567B88900D95CB0;
+			remoteInfo = "Concept2-PM5";
+		};
+		DCF305592567B8CA00D95CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCF3051E2567B88900D95CB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCF305262567B88900D95CB0;
+			remoteInfo = "Concept2-PM5";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21CCCF8A320E1457D4E16721 /* Pods-Concept2-PM5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concept2-PM5Tests.release.xcconfig"; path = "Target Support Files/Pods-Concept2-PM5Tests/Pods-Concept2-PM5Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4CB30E26B4552DD68206EEED /* Pods_Concept2_PM5Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concept2_PM5Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB246724D6AF9B7C18272E3 /* Pods-Concept2SDK-Concept2-PM5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concept2SDK-Concept2-PM5.release.xcconfig"; path = "Target Support Files/Pods-Concept2SDK-Concept2-PM5/Pods-Concept2SDK-Concept2-PM5.release.xcconfig"; sourceTree = "<group>"; };
+		61721C9CACE4C32F25A42C45 /* Pods_Concept2SDK_Concept2_PM5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concept2SDK_Concept2_PM5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7244D98733A24A7D57459B12 /* Pods-Concept2SDK-Concept2-PM5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concept2SDK-Concept2-PM5.debug.xcconfig"; path = "Target Support Files/Pods-Concept2SDK-Concept2-PM5/Pods-Concept2SDK-Concept2-PM5.debug.xcconfig"; sourceTree = "<group>"; };
+		781A7179517EA65523DCA690 /* Pods-Concept2-PM5Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concept2-PM5Tests.debug.xcconfig"; path = "Target Support Files/Pods-Concept2-PM5Tests/Pods-Concept2-PM5Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA0EBAF1DEBFD71F5C5FA985 /* Pods-Concept2SDK-Concept2SDK-iOSDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concept2SDK-Concept2SDK-iOSDemo.release.xcconfig"; path = "Target Support Files/Pods-Concept2SDK-Concept2SDK-iOSDemo/Pods-Concept2SDK-Concept2SDK-iOSDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AC1EC31B33E55DBE36112E35 /* Pods_Concept2SDK_Concept2SDK_iOSDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Concept2SDK_Concept2SDK_iOSDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2A6A6C16EA8FC9D36AA08D /* Pods-Concept2SDK-Concept2SDK-iOSDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concept2SDK-Concept2SDK-iOSDemo.debug.xcconfig"; path = "Target Support Files/Pods-Concept2SDK-Concept2SDK-iOSDemo/Pods-Concept2SDK-Concept2SDK-iOSDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DCF305272567B88900D95CB0 /* Concept2_PM5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Concept2_PM5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF3052A2567B88900D95CB0 /* Concept2_PM5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Concept2_PM5.h; sourceTree = "<group>"; };
+		DCF3052B2567B88900D95CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF305302567B88900D95CB0 /* Concept2-PM5Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Concept2-PM5Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF305352567B88900D95CB0 /* Concept2_PM5Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept2_PM5Tests.swift; sourceTree = "<group>"; };
+		DCF305372567B88900D95CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF305452567B8A900D95CB0 /* Concept2SDK-iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Concept2SDK-iOSDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF3055D2567B93800D95CB0 /* IntervalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalType.swift; sourceTree = "<group>"; };
+		DCF3055E2567B93800D95CB0 /* WorkoutDurationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDurationType.swift; sourceTree = "<group>"; };
+		DCF3055F2567B93800D95CB0 /* RowingStatusSampleRateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingStatusSampleRateType.swift; sourceTree = "<group>"; };
+		DCF305602567B93800D95CB0 /* StrokeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeState.swift; sourceTree = "<group>"; };
+		DCF305612567B93800D95CB0 /* WorkoutState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutState.swift; sourceTree = "<group>"; };
+		DCF305622567B93800D95CB0 /* WorkoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
+		DCF305632567B93800D95CB0 /* RowingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingState.swift; sourceTree = "<group>"; };
+		DCF305642567B93800D95CB0 /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		DCF305672567B93800D95CB0 /* PerformanceMonitorStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorStore.swift; sourceTree = "<group>"; };
+		DCF305692567B93800D95CB0 /* RowingAdditionalStatus1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalStatus1.swift; sourceTree = "<group>"; };
+		DCF3056A2567B93800D95CB0 /* RowingGeneralStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingGeneralStatus.swift; sourceTree = "<group>"; };
+		DCF3056B2567B93800D95CB0 /* RowingHeartRateBeltInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingHeartRateBeltInformation.swift; sourceTree = "<group>"; };
+		DCF3056C2567B93800D95CB0 /* RowingStatusSampleRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingStatusSampleRate.swift; sourceTree = "<group>"; };
+		DCF3056D2567B93800D95CB0 /* RowingAdditionalStatus2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalStatus2.swift; sourceTree = "<group>"; };
+		DCF3056E2567B93800D95CB0 /* RowingWorkoutSummaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingWorkoutSummaryData.swift; sourceTree = "<group>"; };
+		DCF3056F2567B93800D95CB0 /* CSAFECommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSAFECommand.swift; sourceTree = "<group>"; };
+		DCF305702567B93800D95CB0 /* RowingAdditionalIntervalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalIntervalData.swift; sourceTree = "<group>"; };
+		DCF305712567B93800D95CB0 /* RowingIntervalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingIntervalData.swift; sourceTree = "<group>"; };
+		DCF305722567B93800D95CB0 /* RowingAdditionalStrokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalStrokeData.swift; sourceTree = "<group>"; };
+		DCF305732567B93800D95CB0 /* CharacteristicModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicModelProtocol.swift; sourceTree = "<group>"; };
+		DCF305742567B93800D95CB0 /* RowingAdditionalWorkoutSummaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalWorkoutSummaryData.swift; sourceTree = "<group>"; };
+		DCF305752567B93800D95CB0 /* RowingStrokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingStrokeData.swift; sourceTree = "<group>"; };
+		DCF305772567B93800D95CB0 /* C2IntervalSize+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2IntervalSize+Parsing.swift"; sourceTree = "<group>"; };
+		DCF305782567B93800D95CB0 /* C2CalorieCount+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2CalorieCount+Parsing.swift"; sourceTree = "<group>"; };
+		DCF305792567B93800D95CB0 /* C2DriveLength+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2DriveLength+Parsing.swift"; sourceTree = "<group>"; };
+		DCF3057A2567B93800D95CB0 /* C2HeartRateBeltID+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2HeartRateBeltID+Parsing.swift"; sourceTree = "<group>"; };
+		DCF3057B2567B93800D95CB0 /* C2Speed+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Speed+Parsing.swift"; sourceTree = "<group>"; };
+		DCF3057C2567B93800D95CB0 /* C2Power+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Power+Parsing.swift"; sourceTree = "<group>"; };
+		DCF3057D2567B93800D95CB0 /* C2DriveForce+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2DriveForce+Parsing.swift"; sourceTree = "<group>"; };
+		DCF3057E2567B93800D95CB0 /* C2StrokeCount+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2StrokeCount+Parsing.swift"; sourceTree = "<group>"; };
+		DCF3057F2567B93800D95CB0 /* C2Pace+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Pace+Parsing.swift"; sourceTree = "<group>"; };
+		DCF305802567B93800D95CB0 /* C2Work+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Work+Parsing.swift"; sourceTree = "<group>"; };
+		DCF305812567B93800D95CB0 /* C2TimeInterval+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2TimeInterval+Parsing.swift"; sourceTree = "<group>"; };
+		DCF305822567B93800D95CB0 /* C2Distance+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Distance+Parsing.swift"; sourceTree = "<group>"; };
+		DCF305832567B93800D95CB0 /* PerformanceMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		DCF305842567B93800D95CB0 /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		DCF305862567B93800D95CB0 /* CentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralManagerDelegate.swift; sourceTree = "<group>"; };
+		DCF305872567B93800D95CB0 /* PeripheralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralDelegate.swift; sourceTree = "<group>"; };
+		DCF305882567B93800D95CB0 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		DCF3058A2567B93800D95CB0 /* RowingCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingCharacteristic.swift; sourceTree = "<group>"; };
+		DCF3058B2567B93800D95CB0 /* DeviceInformationCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInformationCharacteristic.swift; sourceTree = "<group>"; };
+		DCF3058C2567B93800D95CB0 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DCF3058D2567B93800D95CB0 /* ControlCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCharacteristic.swift; sourceTree = "<group>"; };
+		DCF3058E2567B93800D95CB0 /* Characteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characteristic.swift; sourceTree = "<group>"; };
+		DCF305DC2567BAF800D95CB0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DCF305DF2567BCE800D95CB0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCF305E02567BCE800D95CB0 /* PerformanceMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorViewController.swift; sourceTree = "<group>"; };
+		DCF305E12567BCE800D95CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCF305E52567BCE800D95CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DCF305E72567BCE800D95CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCF305E82567BCE800D95CB0 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		DCF305E92567BCE800D95CB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCF305EA2567BCE800D95CB0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF305F32567BD3F00D95CB0 /* ApplicationLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLog.swift; sourceTree = "<group>"; };
+		DCF305F62567BD7400D95CB0 /* FrameworkLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkLog.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCF305242567B88900D95CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B680549CD8E1F76DF25D62 /* Pods_Concept2SDK_Concept2_PM5.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF3052D2567B88900D95CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF305312567B88900D95CB0 /* Concept2_PM5.framework in Frameworks */,
+				5FC950F975949D2D92125E36 /* Pods_Concept2_PM5Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF305422567B8A900D95CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E474D3E5E03123D38233F9 /* Pods_Concept2SDK_Concept2SDK_iOSDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61E0D63704F0135424842EAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CB30E26B4552DD68206EEED /* Pods_Concept2_PM5Tests.framework */,
+				61721C9CACE4C32F25A42C45 /* Pods_Concept2SDK_Concept2_PM5.framework */,
+				AC1EC31B33E55DBE36112E35 /* Pods_Concept2SDK_Concept2SDK_iOSDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BFA823F7BBEBA11F8D1DB5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				781A7179517EA65523DCA690 /* Pods-Concept2-PM5Tests.debug.xcconfig */,
+				21CCCF8A320E1457D4E16721 /* Pods-Concept2-PM5Tests.release.xcconfig */,
+				7244D98733A24A7D57459B12 /* Pods-Concept2SDK-Concept2-PM5.debug.xcconfig */,
+				5FB246724D6AF9B7C18272E3 /* Pods-Concept2SDK-Concept2-PM5.release.xcconfig */,
+				AC2A6A6C16EA8FC9D36AA08D /* Pods-Concept2SDK-Concept2SDK-iOSDemo.debug.xcconfig */,
+				AA0EBAF1DEBFD71F5C5FA985 /* Pods-Concept2SDK-Concept2SDK-iOSDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCF3051D2567B88900D95CB0 = {
+			isa = PBXGroup;
+			children = (
+				DCF305DC2567BAF800D95CB0 /* Podfile */,
+				DCF305462567B8A900D95CB0 /* Concept2SDK-iOSDemo */,
+				DCF305292567B88900D95CB0 /* Concept2-PM5 */,
+				DCF305342567B88900D95CB0 /* Concept2-PM5Tests */,
+				DCF305282567B88900D95CB0 /* Products */,
+				6BFA823F7BBEBA11F8D1DB5E /* Pods */,
+				61E0D63704F0135424842EAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DCF305282567B88900D95CB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305272567B88900D95CB0 /* Concept2_PM5.framework */,
+				DCF305302567B88900D95CB0 /* Concept2-PM5Tests.xctest */,
+				DCF305452567B8A900D95CB0 /* Concept2SDK-iOSDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCF305292567B88900D95CB0 /* Concept2-PM5 */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3052A2567B88900D95CB0 /* Concept2_PM5.h */,
+				DCF3052B2567B88900D95CB0 /* Info.plist */,
+				DCF3058F2567B93800D95CB0 /* Resources */,
+				DCF3055B2567B93800D95CB0 /* Source */,
+			);
+			path = "Concept2-PM5";
+			sourceTree = "<group>";
+		};
+		DCF305342567B88900D95CB0 /* Concept2-PM5Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305352567B88900D95CB0 /* Concept2_PM5Tests.swift */,
+				DCF305372567B88900D95CB0 /* Info.plist */,
+			);
+			path = "Concept2-PM5Tests";
+			sourceTree = "<group>";
+		};
+		DCF305462567B8A900D95CB0 /* Concept2SDK-iOSDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305E32567BCE800D95CB0 /* Resources */,
+				DCF305DD2567BCE800D95CB0 /* Source */,
+			);
+			path = "Concept2SDK-iOSDemo";
+			sourceTree = "<group>";
+		};
+		DCF3055B2567B93800D95CB0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305642567B93800D95CB0 /* BluetoothManager.swift */,
+				DCF305832567B93800D95CB0 /* PerformanceMonitor.swift */,
+				DCF305842567B93800D95CB0 /* Subject.swift */,
+				DCF305882567B93800D95CB0 /* Types.swift */,
+				DCF305852567B93800D95CB0 /* Delegates */,
+				DCF3055C2567B93800D95CB0 /* Enumerations */,
+				DCF305762567B93800D95CB0 /* Extensions */,
+				DCF305682567B93800D95CB0 /* Models */,
+				DCF305892567B93800D95CB0 /* Services */,
+				DCF305662567B93800D95CB0 /* Stores */,
+				DCF305F52567BD6400D95CB0 /* Utility */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DCF3055C2567B93800D95CB0 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3055D2567B93800D95CB0 /* IntervalType.swift */,
+				DCF3055E2567B93800D95CB0 /* WorkoutDurationType.swift */,
+				DCF3055F2567B93800D95CB0 /* RowingStatusSampleRateType.swift */,
+				DCF305602567B93800D95CB0 /* StrokeState.swift */,
+				DCF305612567B93800D95CB0 /* WorkoutState.swift */,
+				DCF305622567B93800D95CB0 /* WorkoutType.swift */,
+				DCF305632567B93800D95CB0 /* RowingState.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		DCF305662567B93800D95CB0 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305672567B93800D95CB0 /* PerformanceMonitorStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		DCF305682567B93800D95CB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305692567B93800D95CB0 /* RowingAdditionalStatus1.swift */,
+				DCF3056A2567B93800D95CB0 /* RowingGeneralStatus.swift */,
+				DCF3056B2567B93800D95CB0 /* RowingHeartRateBeltInformation.swift */,
+				DCF3056C2567B93800D95CB0 /* RowingStatusSampleRate.swift */,
+				DCF3056D2567B93800D95CB0 /* RowingAdditionalStatus2.swift */,
+				DCF3056E2567B93800D95CB0 /* RowingWorkoutSummaryData.swift */,
+				DCF3056F2567B93800D95CB0 /* CSAFECommand.swift */,
+				DCF305702567B93800D95CB0 /* RowingAdditionalIntervalData.swift */,
+				DCF305712567B93800D95CB0 /* RowingIntervalData.swift */,
+				DCF305722567B93800D95CB0 /* RowingAdditionalStrokeData.swift */,
+				DCF305732567B93800D95CB0 /* CharacteristicModelProtocol.swift */,
+				DCF305742567B93800D95CB0 /* RowingAdditionalWorkoutSummaryData.swift */,
+				DCF305752567B93800D95CB0 /* RowingStrokeData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCF305762567B93800D95CB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305772567B93800D95CB0 /* C2IntervalSize+Parsing.swift */,
+				DCF305782567B93800D95CB0 /* C2CalorieCount+Parsing.swift */,
+				DCF305792567B93800D95CB0 /* C2DriveLength+Parsing.swift */,
+				DCF3057A2567B93800D95CB0 /* C2HeartRateBeltID+Parsing.swift */,
+				DCF3057B2567B93800D95CB0 /* C2Speed+Parsing.swift */,
+				DCF3057C2567B93800D95CB0 /* C2Power+Parsing.swift */,
+				DCF3057D2567B93800D95CB0 /* C2DriveForce+Parsing.swift */,
+				DCF3057E2567B93800D95CB0 /* C2StrokeCount+Parsing.swift */,
+				DCF3057F2567B93800D95CB0 /* C2Pace+Parsing.swift */,
+				DCF305802567B93800D95CB0 /* C2Work+Parsing.swift */,
+				DCF305812567B93800D95CB0 /* C2TimeInterval+Parsing.swift */,
+				DCF305822567B93800D95CB0 /* C2Distance+Parsing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCF305852567B93800D95CB0 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305862567B93800D95CB0 /* CentralManagerDelegate.swift */,
+				DCF305872567B93800D95CB0 /* PeripheralDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DCF305892567B93800D95CB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3058A2567B93800D95CB0 /* RowingCharacteristic.swift */,
+				DCF3058B2567B93800D95CB0 /* DeviceInformationCharacteristic.swift */,
+				DCF3058C2567B93800D95CB0 /* Service.swift */,
+				DCF3058D2567B93800D95CB0 /* ControlCharacteristic.swift */,
+				DCF3058E2567B93800D95CB0 /* Characteristic.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DCF3058F2567B93800D95CB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCF305DD2567BCE800D95CB0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305E12567BCE800D95CB0 /* AppDelegate.swift */,
+				DCF305E22567BCE800D95CB0 /* Utility */,
+				DCF305DE2567BCE800D95CB0 /* ViewControllers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DCF305DE2567BCE800D95CB0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305DF2567BCE800D95CB0 /* ViewController.swift */,
+				DCF305E02567BCE800D95CB0 /* PerformanceMonitorViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DCF305E22567BCE800D95CB0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305F32567BD3F00D95CB0 /* ApplicationLog.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DCF305E32567BCE800D95CB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305EA2567BCE800D95CB0 /* Info.plist */,
+				DCF305E82567BCE800D95CB0 /* InfoPlist.strings */,
+				DCF305E42567BCE800D95CB0 /* LaunchScreen.xib */,
+				DCF305E62567BCE800D95CB0 /* Main.storyboard */,
+				DCF305E92567BCE800D95CB0 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCF305F52567BD6400D95CB0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305F62567BD7400D95CB0 /* FrameworkLog.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DCF305222567B88900D95CB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF305382567B88900D95CB0 /* Concept2_PM5.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DCF305262567B88900D95CB0 /* Concept2-PM5 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF3053B2567B88900D95CB0 /* Build configuration list for PBXNativeTarget "Concept2-PM5" */;
+			buildPhases = (
+				A8962708BCB680030CAD2838 /* [CP] Check Pods Manifest.lock */,
+				DCF305222567B88900D95CB0 /* Headers */,
+				DCF305232567B88900D95CB0 /* Sources */,
+				DCF305242567B88900D95CB0 /* Frameworks */,
+				DCF305252567B88900D95CB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Concept2-PM5";
+			productName = "Concept2-PM5";
+			productReference = DCF305272567B88900D95CB0 /* Concept2_PM5.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DCF3052F2567B88900D95CB0 /* Concept2-PM5Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF3053E2567B88900D95CB0 /* Build configuration list for PBXNativeTarget "Concept2-PM5Tests" */;
+			buildPhases = (
+				F9A36B2595A517EDAFB40EA5 /* [CP] Check Pods Manifest.lock */,
+				DCF3052C2567B88900D95CB0 /* Sources */,
+				DCF3052D2567B88900D95CB0 /* Frameworks */,
+				DCF3052E2567B88900D95CB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCF305332567B88900D95CB0 /* PBXTargetDependency */,
+			);
+			name = "Concept2-PM5Tests";
+			productName = "Concept2-PM5Tests";
+			productReference = DCF305302567B88900D95CB0 /* Concept2-PM5Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DCF305442567B8A900D95CB0 /* Concept2SDK-iOSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCF305562567B8AC00D95CB0 /* Build configuration list for PBXNativeTarget "Concept2SDK-iOSDemo" */;
+			buildPhases = (
+				9DA644F2D25C6FFF49D8A7E0 /* [CP] Check Pods Manifest.lock */,
+				DCF305412567B8A900D95CB0 /* Sources */,
+				DCF305422567B8A900D95CB0 /* Frameworks */,
+				DCF305432567B8A900D95CB0 /* Resources */,
+				782DB1C6BD9ADD1205EFF90E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCF3055A2567B8CA00D95CB0 /* PBXTargetDependency */,
+			);
+			name = "Concept2SDK-iOSDemo";
+			productName = "Concept2SDK-iOSDemo";
+			productReference = DCF305452567B8A900D95CB0 /* Concept2SDK-iOSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCF3051E2567B88900D95CB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "HomeTeam Software";
+				TargetAttributes = {
+					DCF305262567B88900D95CB0 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					DCF3052F2567B88900D95CB0 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					DCF305442567B8A900D95CB0 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DCF305212567B88900D95CB0 /* Build configuration list for PBXProject "Concept2-PM5" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCF3051D2567B88900D95CB0;
+			productRefGroup = DCF305282567B88900D95CB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCF305442567B8A900D95CB0 /* Concept2SDK-iOSDemo */,
+				DCF305262567B88900D95CB0 /* Concept2-PM5 */,
+				DCF3052F2567B88900D95CB0 /* Concept2-PM5Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCF305252567B88900D95CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF3052E2567B88900D95CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF305432567B8A900D95CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF305EE2567BCE800D95CB0 /* LaunchScreen.xib in Resources */,
+				DCF305F12567BCE800D95CB0 /* Images.xcassets in Resources */,
+				DCF305EF2567BCE800D95CB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		782DB1C6BD9ADD1205EFF90E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Concept2SDK-Concept2SDK-iOSDemo/Pods-Concept2SDK-Concept2SDK-iOSDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Concept2SDK-Concept2SDK-iOSDemo/Pods-Concept2SDK-Concept2SDK-iOSDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Concept2SDK-Concept2SDK-iOSDemo/Pods-Concept2SDK-Concept2SDK-iOSDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DA644F2D25C6FFF49D8A7E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Concept2SDK-Concept2SDK-iOSDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8962708BCB680030CAD2838 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Concept2SDK-Concept2-PM5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A36B2595A517EDAFB40EA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Concept2-PM5Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCF305232567B88900D95CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF3059B2567B93800D95CB0 /* RowingAdditionalStatus1.swift in Sources */,
+				DCF305932567B93800D95CB0 /* RowingStatusSampleRateType.swift in Sources */,
+				DCF305AC2567B93800D95CB0 /* C2Speed+Parsing.swift in Sources */,
+				DCF305962567B93800D95CB0 /* WorkoutType.swift in Sources */,
+				DCF305A92567B93800D95CB0 /* C2CalorieCount+Parsing.swift in Sources */,
+				DCF3059E2567B93800D95CB0 /* RowingStatusSampleRate.swift in Sources */,
+				DCF305B12567B93800D95CB0 /* C2Work+Parsing.swift in Sources */,
+				DCF305F72567BD7400D95CB0 /* FrameworkLog.swift in Sources */,
+				DCF305AE2567B93800D95CB0 /* C2DriveForce+Parsing.swift in Sources */,
+				DCF305A52567B93800D95CB0 /* CharacteristicModelProtocol.swift in Sources */,
+				DCF305B62567B93800D95CB0 /* CentralManagerDelegate.swift in Sources */,
+				DCF305B02567B93800D95CB0 /* C2Pace+Parsing.swift in Sources */,
+				DCF3059A2567B93800D95CB0 /* PerformanceMonitorStore.swift in Sources */,
+				DCF305BD2567B93800D95CB0 /* Characteristic.swift in Sources */,
+				DCF305A42567B93800D95CB0 /* RowingAdditionalStrokeData.swift in Sources */,
+				DCF305B42567B93800D95CB0 /* PerformanceMonitor.swift in Sources */,
+				DCF305AD2567B93800D95CB0 /* C2Power+Parsing.swift in Sources */,
+				DCF3059C2567B93800D95CB0 /* RowingGeneralStatus.swift in Sources */,
+				DCF305B72567B93800D95CB0 /* PeripheralDelegate.swift in Sources */,
+				DCF305982567B93800D95CB0 /* BluetoothManager.swift in Sources */,
+				DCF305B52567B93800D95CB0 /* Subject.swift in Sources */,
+				DCF305BA2567B93800D95CB0 /* DeviceInformationCharacteristic.swift in Sources */,
+				DCF305942567B93800D95CB0 /* StrokeState.swift in Sources */,
+				DCF305B92567B93800D95CB0 /* RowingCharacteristic.swift in Sources */,
+				DCF305B32567B93800D95CB0 /* C2Distance+Parsing.swift in Sources */,
+				DCF305B82567B93800D95CB0 /* Types.swift in Sources */,
+				DCF305972567B93800D95CB0 /* RowingState.swift in Sources */,
+				DCF305912567B93800D95CB0 /* IntervalType.swift in Sources */,
+				DCF305A82567B93800D95CB0 /* C2IntervalSize+Parsing.swift in Sources */,
+				DCF305AA2567B93800D95CB0 /* C2DriveLength+Parsing.swift in Sources */,
+				DCF305A22567B93800D95CB0 /* RowingAdditionalIntervalData.swift in Sources */,
+				DCF305BB2567B93800D95CB0 /* Service.swift in Sources */,
+				DCF305A02567B93800D95CB0 /* RowingWorkoutSummaryData.swift in Sources */,
+				DCF305A32567B93800D95CB0 /* RowingIntervalData.swift in Sources */,
+				DCF305952567B93800D95CB0 /* WorkoutState.swift in Sources */,
+				DCF3059D2567B93800D95CB0 /* RowingHeartRateBeltInformation.swift in Sources */,
+				DCF305B22567B93800D95CB0 /* C2TimeInterval+Parsing.swift in Sources */,
+				DCF305AF2567B93800D95CB0 /* C2StrokeCount+Parsing.swift in Sources */,
+				DCF305A72567B93800D95CB0 /* RowingStrokeData.swift in Sources */,
+				DCF305922567B93800D95CB0 /* WorkoutDurationType.swift in Sources */,
+				DCF305AB2567B93800D95CB0 /* C2HeartRateBeltID+Parsing.swift in Sources */,
+				DCF305A62567B93800D95CB0 /* RowingAdditionalWorkoutSummaryData.swift in Sources */,
+				DCF305A12567B93800D95CB0 /* CSAFECommand.swift in Sources */,
+				DCF305BC2567B93800D95CB0 /* ControlCharacteristic.swift in Sources */,
+				DCF3059F2567B93800D95CB0 /* RowingAdditionalStatus2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF3052C2567B88900D95CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF305362567B88900D95CB0 /* Concept2_PM5Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF305412567B8A900D95CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCF305ED2567BCE800D95CB0 /* AppDelegate.swift in Sources */,
+				DCF305F42567BD3F00D95CB0 /* ApplicationLog.swift in Sources */,
+				DCF305EC2567BCE800D95CB0 /* PerformanceMonitorViewController.swift in Sources */,
+				DCF305EB2567BCE800D95CB0 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCF305332567B88900D95CB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCF305262567B88900D95CB0 /* Concept2-PM5 */;
+			targetProxy = DCF305322567B88900D95CB0 /* PBXContainerItemProxy */;
+		};
+		DCF3055A2567B8CA00D95CB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCF305262567B88900D95CB0 /* Concept2-PM5 */;
+			targetProxy = DCF305592567B8CA00D95CB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCF305E42567BCE800D95CB0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCF305E52567BCE800D95CB0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		DCF305E62567BCE800D95CB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCF305E72567BCE800D95CB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCF305392567B88900D95CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DCF3053A2567B88900D95CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DCF3053C2567B88900D95CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7244D98733A24A7D57459B12 /* Pods-Concept2SDK-Concept2-PM5.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Concept2-PM5/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hometeamsoftware.Concept2-PM5";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCF3053D2567B88900D95CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB246724D6AF9B7C18272E3 /* Pods-Concept2SDK-Concept2-PM5.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Concept2-PM5/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hometeamsoftware.Concept2-PM5";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCF3053F2567B88900D95CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 781A7179517EA65523DCA690 /* Pods-Concept2-PM5Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = "Concept2-PM5Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hometeamsoftware.Concept2-PM5Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCF305402567B88900D95CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21CCCF8A320E1457D4E16721 /* Pods-Concept2-PM5Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = "Concept2-PM5Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hometeamsoftware.Concept2-PM5Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DCF305572567B8AC00D95CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC2A6A6C16EA8FC9D36AA08D /* Pods-Concept2SDK-Concept2SDK-iOSDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = "Concept2SDK-iOSDemo/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hometeamsoftware.Concept2SDK-iOSDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCF305582567B8AC00D95CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0EBAF1DEBFD71F5C5FA985 /* Pods-Concept2SDK-Concept2SDK-iOSDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
+				INFOPLIST_FILE = "Concept2SDK-iOSDemo/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hometeamsoftware.Concept2SDK-iOSDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCF305212567B88900D95CB0 /* Build configuration list for PBXProject "Concept2-PM5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF305392567B88900D95CB0 /* Debug */,
+				DCF3053A2567B88900D95CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF3053B2567B88900D95CB0 /* Build configuration list for PBXNativeTarget "Concept2-PM5" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF3053C2567B88900D95CB0 /* Debug */,
+				DCF3053D2567B88900D95CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF3053E2567B88900D95CB0 /* Build configuration list for PBXNativeTarget "Concept2-PM5Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF3053F2567B88900D95CB0 /* Debug */,
+				DCF305402567B88900D95CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCF305562567B8AC00D95CB0 /* Build configuration list for PBXNativeTarget "Concept2SDK-iOSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF305572567B8AC00D95CB0 /* Debug */,
+				DCF305582567B8AC00D95CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCF3051E2567B88900D95CB0 /* Project object */;
+}
