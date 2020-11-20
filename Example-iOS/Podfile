@@ -8,6 +8,6 @@ target 'Example-iOS_Example' do
   pod "Concept2-SDK", :path => "../"
 end
 
-target 'Example-iOS_Tests' do
-  pod "Concept2-SDK", :path => "../"
-end
+#target 'Example-iOS_Tests' do
+#  pod "Concept2-SDK", :path => "../"
+#end

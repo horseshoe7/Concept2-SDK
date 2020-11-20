@@ -36,7 +36,8 @@
 		94D909959B0761B97D634621 /* Pods-Example-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS_Example/Pods-Example-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		99F0DBCDB35A53FB7DE75C3B /* Pods-Example-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS_Tests/Pods-Example-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD5864C82043BA77B5B182E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		B837EB56013EB6A2B97D3A91 /* Concept2-SDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Concept2-SDK.podspec"; path = "../Concept2-SDK.podspec"; sourceTree = "<group>"; };
+		B837EB56013EB6A2B97D3A91 /* Concept2-SDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Concept2-SDK.podspec"; path = "../Concept2-SDK.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DCA6ED93255F2A0C00101AE6 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DDA24E451DE29015D7191FD9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E3FDE8DEB92F528FDD1F272B /* Pods_Example_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -56,6 +57,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				DCA6ED93255F2A0C00101AE6 /* Podfile */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example-iOS */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -179,7 +181,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = VU3YYDMJSY;
+						DevelopmentTeam = Z76RWC6PEN;
 						LastSwiftMigration = 1110;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -408,7 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = VU3YYDMJSY;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
 				INFOPLIST_FILE = "Concept2-SDK/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -425,7 +427,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = VU3YYDMJSY;
+				DEVELOPMENT_TEAM = Z76RWC6PEN;
 				INFOPLIST_FILE = "Concept2-SDK/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
