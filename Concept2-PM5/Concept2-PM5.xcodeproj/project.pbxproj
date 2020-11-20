@@ -64,6 +64,8 @@
 		DCF305F12567BCE800D95CB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF305E92567BCE800D95CB0 /* Images.xcassets */; };
 		DCF305F42567BD3F00D95CB0 /* ApplicationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305F32567BD3F00D95CB0 /* ApplicationLog.swift */; };
 		DCF305F72567BD7400D95CB0 /* FrameworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305F62567BD7400D95CB0 /* FrameworkLog.swift */; };
+		DCF305FB2567C91D00D95CB0 /* PlotStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305FA2567C91D00D95CB0 /* PlotStripView.swift */; };
+		DCF305FD2567F11700D95CB0 /* SandboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */; };
 		E0B680549CD8E1F76DF25D62 /* Pods_Concept2SDK_Concept2_PM5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61721C9CACE4C32F25A42C45 /* Pods_Concept2SDK_Concept2_PM5.framework */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +159,8 @@
 		DCF305F32567BD3F00D95CB0 /* ApplicationLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLog.swift; sourceTree = "<group>"; };
 		DCF305F62567BD7400D95CB0 /* FrameworkLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkLog.swift; sourceTree = "<group>"; };
 		DCF305F82567C1D600D95CB0 /* Concept2-SDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Concept2-SDK.podspec"; path = "../../Concept2-SDK.podspec"; sourceTree = "<group>"; };
+		DCF305FA2567C91D00D95CB0 /* PlotStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotStripView.swift; sourceTree = "<group>"; };
+		DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +380,7 @@
 			children = (
 				DCF305E12567BCE800D95CB0 /* AppDelegate.swift */,
 				DCF305E22567BCE800D95CB0 /* Utility */,
+				DCF305F92567C8E800D95CB0 /* CommonUI */,
 				DCF305DE2567BCE800D95CB0 /* ViewControllers */,
 			);
 			path = Source;
@@ -386,6 +391,7 @@
 			children = (
 				DCF305DF2567BCE800D95CB0 /* ViewController.swift */,
 				DCF305E02567BCE800D95CB0 /* PerformanceMonitorViewController.swift */,
+				DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -416,6 +422,14 @@
 				DCF305F62567BD7400D95CB0 /* FrameworkLog.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		DCF305F92567C8E800D95CB0 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				DCF305FA2567C91D00D95CB0 /* PlotStripView.swift */,
+			);
+			path = CommonUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -711,7 +725,9 @@
 			files = (
 				DCF305ED2567BCE800D95CB0 /* AppDelegate.swift in Sources */,
 				DCF305F42567BD3F00D95CB0 /* ApplicationLog.swift in Sources */,
+				DCF305FD2567F11700D95CB0 /* SandboxViewController.swift in Sources */,
 				DCF305EC2567BCE800D95CB0 /* PerformanceMonitorViewController.swift in Sources */,
+				DCF305FB2567C91D00D95CB0 /* PlotStripView.swift in Sources */,
 				DCF305EB2567BCE800D95CB0 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
