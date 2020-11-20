@@ -155,17 +155,17 @@ public final class PerformanceMonitor
   
   // MARK: -
   func updatePeripheralObservers() {
-    print("[PerformanceMonitor]updatePeripheralObservers")
+    log.debug("[PerformanceMonitor]updatePeripheralObservers")
     
     peripheral.services?.forEach({ (service:CBService) -> () in
-      print("Requesting notifications for \(service.description)")
+      log.debug("Requesting notifications for \(service.description)")
       
       if let svc = Service(uuid: service.uuid) {
         peripheral.discoverCharacteristics(svc.characteristicUUIDs,
           for:  service)
         
         service.characteristics?.forEach({ (characteristic:CBCharacteristic) -> () in
-          print("\t* \(characteristic)")
+          log.debug("\t* \(characteristic)")
           peripheral.setNotifyValue(true, for: characteristic)
         })
       }

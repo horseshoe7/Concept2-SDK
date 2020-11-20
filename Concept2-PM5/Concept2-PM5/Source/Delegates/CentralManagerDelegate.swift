@@ -15,22 +15,22 @@ final class CentralManagerDelegate:NSObject, CBCentralManagerDelegate {
   {
     switch central.state {
     case .unknown:
-      print("[BluetoothManager]state: unknown")
+      log.debug("[BluetoothManager]state: unknown")
       break
     case .resetting:
-      print("[BluetoothManager]state: resetting")
+      log.debug("[BluetoothManager]state: resetting")
       break
     case .unsupported:
-      print("[BluetoothManager]state: not available")
+      log.debug("[BluetoothManager]state: not available")
       break
     case .unauthorized:
-      print("[BluetoothManager]state: not authorized")
+      log.debug("[BluetoothManager]state: not authorized")
       break
     case .poweredOff:
-      print("[BluetoothManager]state: powered off")
+      log.debug("[BluetoothManager]state: powered off")
       break
     case .poweredOn:
-      print("[BluetoothManager]state: powered on")
+      log.debug("[BluetoothManager]state: powered on")
       break
     @unknown default:
       fatalError("[BluetoothManager]state: unknown")
@@ -46,7 +46,7 @@ final class CentralManagerDelegate:NSObject, CBCentralManagerDelegate {
     advertisementData: [String : Any],
     rssi RSSI: NSNumber)
   {
-    print("[BluetoothManager]didDiscoverPeripheral \(peripheral)")
+    log.debug("[BluetoothManager]didDiscoverPeripheral \(peripheral)")
     PerformanceMonitorStore.sharedInstance.addPerformanceMonitor(
       PerformanceMonitor(withPeripheral: peripheral)
     )
@@ -57,7 +57,7 @@ final class CentralManagerDelegate:NSObject, CBCentralManagerDelegate {
     didConnect
     peripheral: CBPeripheral)
   {
-    print("[BluetoothManager]didConnectPeripheral")
+    log.debug("[BluetoothManager]didConnectPeripheral")
     peripheral.discoverServices([
       Service.deviceDiscovery.UUID,
       Service.deviceInformation.UUID,
@@ -70,7 +70,7 @@ final class CentralManagerDelegate:NSObject, CBCentralManagerDelegate {
     didFailToConnect
     peripheral: CBPeripheral,
     error: Error?) {
-      print("[BluetoothManager]didFailToConnectPeripheral")
+      log.debug("[BluetoothManager]didFailToConnectPeripheral")
       postPerformanceMonitorNotificationForPeripheral(peripheral)
   }
   
@@ -78,7 +78,7 @@ final class CentralManagerDelegate:NSObject, CBCentralManagerDelegate {
     didDisconnectPeripheral
     peripheral: CBPeripheral,
     error: Error?) {
-      print("[BluetoothManager]didDisconnectPeripheral")
+      log.debug("[BluetoothManager]didDisconnectPeripheral")
       postPerformanceMonitorNotificationForPeripheral(peripheral)
   }
   
