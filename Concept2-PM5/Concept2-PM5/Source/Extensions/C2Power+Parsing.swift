@@ -9,7 +9,7 @@
 extension C2Power {
   /**
    */
-  init(powerWithLow low:UInt16, high:UInt16) {
+  init(powerWithLow low: UInt16, high: UInt16) {
     self = C2Power(low | (high << 8))
   }
 }

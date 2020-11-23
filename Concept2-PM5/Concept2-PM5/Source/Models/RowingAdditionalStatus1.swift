@@ -29,14 +29,14 @@ struct RowingAdditionalStatus1: CharacteristicModel, CustomDebugStringConvertibl
     Rest Time Hi
   */
   
-  var elapsedTime:C2TimeInterval
-  var speed:C2Speed
-  var strokeRate:C2StrokeRate
-  var heartRate:C2HeartRate
-  var currentPace:C2Pace
-  var averagePace:C2Pace
-  var restDistance:C2Distance
-  var restTime:C2TimeInterval
+  var elapsedTime: C2TimeInterval
+  var speed: C2Speed
+  var strokeRate: C2StrokeRate
+  var heartRate: C2HeartRate
+  var currentPace: C2Pace
+  var averagePace: C2Pace
+  var restDistance: C2Distance
+  var restTime: C2TimeInterval
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -53,7 +53,7 @@ struct RowingAdditionalStatus1: CharacteristicModel, CustomDebugStringConvertibl
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.speed.value = speed
     performanceMonitor.strokeRate.value = strokeRate
@@ -65,7 +65,7 @@ struct RowingAdditionalStatus1: CharacteristicModel, CustomDebugStringConvertibl
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
       return "[RowingAdditionalStatus1]"
   }
 }

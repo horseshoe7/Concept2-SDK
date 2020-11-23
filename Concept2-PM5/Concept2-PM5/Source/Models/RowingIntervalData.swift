@@ -31,14 +31,14 @@ struct RowingIntervalData: CharacteristicModel, CustomDebugStringConvertible {
     Split/Interval Number
   */
   
-  var elapsedTime:C2TimeInterval
-  var distance:C2Distance
-  var intervalTime:C2TimeInterval
-  var intervalDistance:C2Distance
-  var intervalRestTime:C2TimeInterval
-  var intervalRestDistance:C2Distance
-  var intervalType:IntervalType?
-  var intervalNumber:C2IntervalCount
+  var elapsedTime: C2TimeInterval
+  var distance: C2Distance
+  var intervalTime: C2TimeInterval
+  var intervalDistance: C2Distance
+  var intervalRestTime: C2TimeInterval
+  var intervalRestDistance: C2Distance
+  var intervalType: IntervalType?
+  var intervalNumber: C2IntervalCount
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -55,7 +55,7 @@ struct RowingIntervalData: CharacteristicModel, CustomDebugStringConvertible {
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.distance.value = distance
     performanceMonitor.intervalTime.value = intervalTime

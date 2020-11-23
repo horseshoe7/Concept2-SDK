@@ -6,13 +6,13 @@
 //
 //
 
-public enum WorkoutDurationType:Int {
+public enum WorkoutDurationType: Int {
   case timeDuration = 0
   case caloriesDuration = 0x40
   case distanceDuration = 0x80
   case wattsDuration = 0xC0
   
-  var title:String {
+  var title: String {
     switch self {
     case .timeDuration:
       return "Time duration"

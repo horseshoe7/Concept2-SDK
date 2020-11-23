@@ -33,19 +33,19 @@ struct RowingWorkoutSummaryData: CharacteristicModel, CustomDebugStringConvertib
     Avg Pace Hi
   */
   
-  var logEntryDate:C2Date
-  var logEntryTime:C2Time
-  var elapsedTime:C2TimeInterval
-  var distance:C2Distance
-  var averageStrokeRate:C2StrokeRate
-  var endingHeartRate:C2HeartRate
-  var averageHeartRate:C2HeartRate
-  var minimumHeartRate:C2HeartRate
-  var maximumHeartRate:C2HeartRate
-  var dragFactorAverage:C2DragFactor
-  var recoveryHeartRate:C2HeartRate
-  var workoutType:WorkoutType?
-  var averagePace:C2Pace
+  var logEntryDate: C2Date
+  var logEntryTime: C2Time
+  var elapsedTime: C2TimeInterval
+  var distance: C2Distance
+  var averageStrokeRate: C2StrokeRate
+  var endingHeartRate: C2HeartRate
+  var averageHeartRate: C2HeartRate
+  var minimumHeartRate: C2HeartRate
+  var maximumHeartRate: C2HeartRate
+  var dragFactorAverage: C2DragFactor
+  var recoveryHeartRate: C2HeartRate
+  var workoutType: WorkoutType?
+  var averagePace: C2Pace
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -67,7 +67,7 @@ struct RowingWorkoutSummaryData: CharacteristicModel, CustomDebugStringConvertib
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
 //    performanceMonitor.logEntryDate.value = logEntryDate
 //    performanceMonitor.logEntryTime.value = logEntryTime
     performanceMonitor.elapsedTime.value = elapsedTime
@@ -84,7 +84,7 @@ struct RowingWorkoutSummaryData: CharacteristicModel, CustomDebugStringConvertib
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
       return "[RowingWorkoutSummaryData]"
   }
 }

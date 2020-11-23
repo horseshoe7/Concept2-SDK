@@ -9,7 +9,8 @@
 import CoreBluetooth
 
 final class PeripheralDelegate: NSObject, CBPeripheralDelegate {
-  weak var performanceMonitor:PerformanceMonitor?
+    
+  weak var performanceMonitor: PerformanceMonitor?
   
   // MARK: Services
   func peripheral(_ peripheral: CBPeripheral,

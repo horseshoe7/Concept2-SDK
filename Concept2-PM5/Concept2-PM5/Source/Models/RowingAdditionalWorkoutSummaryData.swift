@@ -32,16 +32,16 @@ struct RowingAdditionalWorkoutSummaryData: CharacteristicModel, CustomDebugStrin
     Avg Calories Hi
   */
   
-  var logEntryDate:C2Date
-  var logEntryTime:C2Time
-  var intervalType:IntervalType?
-  var intervalSize:C2IntervalSize
-  var intervalCount:C2IntervalCount
-  var totalCalories:C2CalorieCount
-  var watts:C2Power
-  var totalRestDistance:C2Distance
-  var intervalRestTime:C2TimeInterval
-  var averageCalories:C2CalorieCount
+  var logEntryDate: C2Date
+  var logEntryTime: C2Time
+  var intervalType: IntervalType?
+  var intervalSize: C2IntervalSize
+  var intervalCount: C2IntervalCount
+  var totalCalories: C2CalorieCount
+  var watts: C2Power
+  var totalRestDistance: C2Distance
+  var intervalRestTime: C2TimeInterval
+  var averageCalories: C2CalorieCount
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -60,7 +60,7 @@ struct RowingAdditionalWorkoutSummaryData: CharacteristicModel, CustomDebugStrin
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
 //    performanceMonitor.logEntryDate.value = logEntryDate
 //    performanceMonitor.logEntryTime.value = logEntryTime
     performanceMonitor.intervalType.value = intervalType
@@ -74,7 +74,7 @@ struct RowingAdditionalWorkoutSummaryData: CharacteristicModel, CustomDebugStrin
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
       return "[RowingAdditionalWorkoutSummaryData]"
   }
 }

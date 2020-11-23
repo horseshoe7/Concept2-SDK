@@ -9,8 +9,8 @@
 extension C2DriveLength {
   /**
    */
-  init(driveLengthWithLow low:UInt8) {
-    let driveLengthMultiplier:C2DriveLength = 0.01
+  init(driveLengthWithLow low: UInt8) {
+    let driveLengthMultiplier: C2DriveLength = 0.01
     
     self = C2DriveLength(low) * driveLengthMultiplier
   }

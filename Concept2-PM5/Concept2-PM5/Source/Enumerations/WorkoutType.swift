@@ -6,7 +6,7 @@
 //
 //
 
-public enum WorkoutType:Int {
+public enum WorkoutType: Int {
   case justRowNoSplits = 0
   case justRowSplits
   case fixedDistanceNoSplits
@@ -20,7 +20,7 @@ public enum WorkoutType:Int {
   case fixedCalorie
   case fixedWattMinutes
   
-  var title:String {
+  var title: String {
     switch self {
     case .justRowNoSplits:
       return "Just row, no splits"

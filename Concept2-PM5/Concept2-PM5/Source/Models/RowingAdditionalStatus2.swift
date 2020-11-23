@@ -31,14 +31,14 @@ struct RowingAdditionalStatus2: CharacteristicModel, CustomDebugStringConvertibl
     Last Split Distance Hi
    */
   
-  var elapsedTime:C2TimeInterval
-  var intervalCount:C2IntervalCount
-  var totalCalories:C2CalorieCount
-  var intervalAveragePace:C2Pace
-  var intervalAveragePower:C2Power
-  var intervalAverageCalories:C2CalorieCount
-  var lastSplitTime:C2TimeInterval
-  var lastSplitDistance:C2Distance
+  var elapsedTime: C2TimeInterval
+  var intervalCount: C2IntervalCount
+  var totalCalories: C2CalorieCount
+  var intervalAveragePace: C2Pace
+  var intervalAveragePower: C2Power
+  var intervalAverageCalories: C2CalorieCount
+  var lastSplitTime: C2TimeInterval
+  var lastSplitDistance: C2Distance
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -55,7 +55,7 @@ struct RowingAdditionalStatus2: CharacteristicModel, CustomDebugStringConvertibl
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.intervalCount.value = intervalCount
     performanceMonitor.totalCalories.value = totalCalories
@@ -67,7 +67,7 @@ struct RowingAdditionalStatus2: CharacteristicModel, CustomDebugStringConvertibl
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
     return "[RowingAdditionalStatus2]"
   }
 }

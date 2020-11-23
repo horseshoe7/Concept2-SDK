@@ -9,8 +9,8 @@
 extension C2DriveForce {
   /**
    */
-  init(driveForceWithLow low:UInt16, high:UInt16) {
-    let driveForceMultiplier:C2DriveForce = 0.1
+  init(driveForceWithLow low: UInt16, high: UInt16) {
+    let driveForceMultiplier: C2DriveForce = 0.1
     
     self = C2DriveForce(low | (high << 8)) * driveForceMultiplier
   }

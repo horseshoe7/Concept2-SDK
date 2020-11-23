@@ -8,7 +8,7 @@
 
 import CoreBluetooth
 
-public enum RowingCharacteristic:Characteristic {
+public enum RowingCharacteristic: Characteristic {
   case generalStatus
   case additionalStatus1
   case additionalStatus2
@@ -22,7 +22,7 @@ public enum RowingCharacteristic:Characteristic {
   case heartRateBeltInformation
   case mutliplexedInformation
   
-  init?(uuid:CBUUID) {
+  init?(uuid: CBUUID) {
     switch uuid {
     case RowingCharacteristic.generalStatus.UUID:
       self = .generalStatus
@@ -53,7 +53,7 @@ public enum RowingCharacteristic:Characteristic {
     }
   }
   
-  var UUID:CBUUID {
+  var UUID: CBUUID {
     switch self {
     case .generalStatus:
       return CBUUID(string: "CE060031-43E5-11E4-916C-0800200C9A66")
@@ -82,7 +82,7 @@ public enum RowingCharacteristic:Characteristic {
     }
   }
   
-  func parse(data:Data?) -> CharacteristicModel? {
+  func parse(data: Data?) -> CharacteristicModel? {
     if let data = data {
       switch self {
       case .generalStatus:

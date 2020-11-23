@@ -6,7 +6,7 @@
 //
 //
 
-public enum IntervalType:Int {
+public enum IntervalType: Int {
   case time = 0
   case distance
   case rest
@@ -19,7 +19,7 @@ public enum IntervalType:Int {
   case wattMinuteRestUndefined
   case none = 255
   
-  var title:String {
+  var title: String {
     switch self {
     case .time:
       return "Time"

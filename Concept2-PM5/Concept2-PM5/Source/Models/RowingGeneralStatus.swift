@@ -32,17 +32,17 @@ struct RowingGeneralStatus: CharacteristicModel, CustomDebugStringConvertible {
     Drag Factor                     CSAFE_PM_GET_DRAGFACTOR
    */
   
-  var elapsedTime:C2TimeInterval
-  var distance:C2Distance
-  var workoutType:WorkoutType
-  var intervalType:IntervalType
-  var workoutState:WorkoutState
-  var rowingState:RowingState
-  var strokeState:StrokeState
-  var totalWorkDistance:C2Distance
-  var workoutDuration:C2TimeInterval
-  var workoutDurationType:WorkoutDurationType
-  var dragFactor:C2DragFactor
+  var elapsedTime: C2TimeInterval
+  var distance: C2Distance
+  var workoutType: WorkoutType
+  var intervalType: IntervalType
+  var workoutState: WorkoutState
+  var rowingState: RowingState
+  var strokeState: StrokeState
+  var totalWorkDistance: C2Distance
+  var workoutDuration: C2TimeInterval
+  var workoutDurationType: WorkoutDurationType
+  var dragFactor: C2DragFactor
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -62,7 +62,7 @@ struct RowingGeneralStatus: CharacteristicModel, CustomDebugStringConvertible {
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.distance.value = distance
     performanceMonitor.workoutType.value = workoutType
@@ -77,7 +77,7 @@ struct RowingGeneralStatus: CharacteristicModel, CustomDebugStringConvertible {
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
     return "[RowingGeneralStatus]"
     + "\telapsed time: \(elapsedTime)"
     + "\tdistance: \(distance)"

@@ -32,16 +32,16 @@ struct RowingStrokeData: CharacteristicModel, CustomDebugStringConvertible {
     Stroke Count Hi,
   */
   
-  var elapsedTime:C2TimeInterval
-  var distance:C2Distance
-  var driveLength:C2DriveLength
-  var driveTime:C2DriveTime
-  var strokeRecoveryTime:C2TimeInterval
-  var strokeDistance:C2Distance
-  var peakDriveForce:C2DriveForce
-  var averageDriveForce:C2DriveForce
-  var workPerStroke:C2Work
-  var strokeCount:C2StrokeCount
+  var elapsedTime: C2TimeInterval
+  var distance: C2Distance
+  var driveLength: C2DriveLength
+  var driveTime: C2DriveTime
+  var strokeRecoveryTime: C2TimeInterval
+  var strokeDistance: C2Distance
+  var peakDriveForce: C2DriveForce
+  var averageDriveForce: C2DriveForce
+  var workPerStroke: C2Work
+  var strokeCount: C2StrokeCount
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -60,7 +60,7 @@ struct RowingStrokeData: CharacteristicModel, CustomDebugStringConvertible {
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.distance.value = distance
     performanceMonitor.driveLength.value = driveLength
@@ -74,7 +74,7 @@ struct RowingStrokeData: CharacteristicModel, CustomDebugStringConvertible {
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
     return "[RowingStrokeData]"
   }
 }

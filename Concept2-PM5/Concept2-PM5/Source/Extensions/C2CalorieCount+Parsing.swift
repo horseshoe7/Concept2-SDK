@@ -9,7 +9,7 @@
 extension C2CalorieCount {
   /**
    */
-  init(calorieCountWithLow low:UInt16, high:UInt16) {
+  init(calorieCountWithLow low: UInt16, high: UInt16) {
     self = C2CalorieCount(low | (high << 8))
   }
 }

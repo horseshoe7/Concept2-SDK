@@ -31,17 +31,17 @@ struct RowingAdditionalIntervalData: CharacteristicModel, CustomDebugStringConve
   Split/Interval Number
   */
   
-  var elapsedTime:C2TimeInterval
-  var intervalAverageStrokeRate:C2StrokeRate
-  var intervalWorkHeartrate:C2HeartRate
-  var intervalRestHeartrate:C2HeartRate
-  var intervalAveragePace:C2Pace
-  var intervalTotalCalories:C2CalorieCount
-  var intervalAverageCalories:C2CalorieCount
-  var intervalSpeed:C2Speed
-  var intervalPower:C2Power
-  var splitAverageDragFactor:C2DragFactor
-  var intervalNumber:C2IntervalCount
+  var elapsedTime: C2TimeInterval
+  var intervalAverageStrokeRate: C2StrokeRate
+  var intervalWorkHeartrate: C2HeartRate
+  var intervalRestHeartrate: C2HeartRate
+  var intervalAveragePace: C2Pace
+  var intervalTotalCalories: C2CalorieCount
+  var intervalAverageCalories: C2CalorieCount
+  var intervalSpeed: C2Speed
+  var intervalPower: C2Power
+  var splitAverageDragFactor: C2DragFactor
+  var intervalNumber: C2IntervalCount
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -61,7 +61,7 @@ struct RowingAdditionalIntervalData: CharacteristicModel, CustomDebugStringConve
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.intervalAverageStrokeRate.value = intervalAverageStrokeRate
     performanceMonitor.intervalWorkHeartrate.value = intervalWorkHeartrate
@@ -76,7 +76,7 @@ struct RowingAdditionalIntervalData: CharacteristicModel, CustomDebugStringConve
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
       return "[RowingAdditionalIntervalData]"
   }
 }

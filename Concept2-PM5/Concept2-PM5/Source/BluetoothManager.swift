@@ -8,8 +8,8 @@
 
 import CoreBluetooth
 
-public final class BluetoothManager
-{
+public final class BluetoothManager {
+    
   public static let sharedInstance = BluetoothManager()
   
   public static func scanForPerformanceMonitors() {
@@ -20,26 +20,26 @@ public final class BluetoothManager
     sharedInstance.stopScanningForPerformanceMonitors()
   }
   
-  public static func connectPerformanceMonitor(_ performanceMonitor:PerformanceMonitor,
+  public static func connectPerformanceMonitor(_ performanceMonitor: PerformanceMonitor,
     exclusive:Bool) {
       sharedInstance.connectPerformanceMonitor(performanceMonitor, exclusive: exclusive)
   }
   
-  public static func connectPerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  public static func connectPerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     sharedInstance.connectPerformanceMonitor(performanceMonitor)
   }
   
-  public static func disconnectPerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  public static func disconnectPerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     sharedInstance.disconnectPerformanceMonitor(performanceMonitor)
   }
   
-  public static var isReady:Subject<Bool> {
+  public static var isReady: Subject<Bool> {
     get {
       return sharedInstance.isReady
     }
   }
   
-  public static var performanceMonitors:Subject<Array<PerformanceMonitor>> {
+  public static var performanceMonitors: Subject<Array<PerformanceMonitor>> {
     get {
       return sharedInstance.performanceMonitors
     }
@@ -49,8 +49,8 @@ public final class BluetoothManager
   fileprivate let performanceMonitors = Subject<Array<PerformanceMonitor>>(value: Array<PerformanceMonitor>())
   
   // MARK: -
-  fileprivate var centralManager:CBCentralManager
-  fileprivate var centralManagerDelegate:CentralManagerDelegate
+  fileprivate var centralManager: CBCentralManager
+  fileprivate var centralManagerDelegate: CentralManagerDelegate
   fileprivate let centralManagerQueue = DispatchQueue(
     label: "com.boutfitness.concept2.bluetooth.central",
     attributes: DispatchQueue.Attributes.concurrent
@@ -86,7 +86,7 @@ public final class BluetoothManager
     centralManager.stopScan()
   }
   
-  func connectPerformanceMonitor(_ performanceMonitor:PerformanceMonitor, exclusive:Bool) {
+  func connectPerformanceMonitor(_ performanceMonitor: PerformanceMonitor, exclusive: Bool) {
     // TODO: use the PerformanceMonitor abstraction instead of peripherals
     if exclusive == true {
       centralManager.retrieveConnectedPeripherals(withServices: [Service.deviceDiscovery.UUID])
@@ -102,11 +102,11 @@ public final class BluetoothManager
     centralManager.connect(performanceMonitor.peripheral, options: nil)
   }
   
-  func connectPerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func connectPerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     self.connectPerformanceMonitor(performanceMonitor, exclusive: true)
   }
   
-  func disconnectPerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func disconnectPerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     centralManager.cancelPeripheralConnection(performanceMonitor.peripheral)
   }
 }

@@ -9,7 +9,7 @@
 extension C2StrokeCount {
   /**
    */
-  init(strokeCountWithLow low:UInt16, high:UInt16) {
+  init(strokeCountWithLow low: UInt16, high: UInt16) {
     self = C2StrokeCount(low | (high << 8))
   }
 }

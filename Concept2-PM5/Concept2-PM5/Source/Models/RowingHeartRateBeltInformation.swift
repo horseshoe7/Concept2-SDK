@@ -18,9 +18,9 @@ struct RowingHeartRateBeltInformation: CharacteristicModel, CustomDebugStringCon
     Belt ID Hi
   */
   
-  var manufacturerID:C2HeartRateBeltManufacturerID
-  var deviceType:C2HeartRateBeltType
-  var beltID:C2HeartRateBeltID
+  var manufacturerID: C2HeartRateBeltManufacturerID
+  var deviceType: C2HeartRateBeltType
+  var beltID: C2HeartRateBeltID
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -34,14 +34,14 @@ struct RowingHeartRateBeltInformation: CharacteristicModel, CustomDebugStringCon
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.manufacturerID.value = manufacturerID
     performanceMonitor.deviceType.value = deviceType
     performanceMonitor.beltID.value = beltID
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
     return "[RowingHeartRateBeltInformation]"
   }
 }
@@ -50,7 +50,7 @@ struct RowingHeartRateBeltInformation: CharacteristicModel, CustomDebugStringCon
 NSData extension to allow writing of this value
 */
 extension Data {
-  init(rowingHeartRateBeltInformation:RowingHeartRateBeltInformation) {
+  init(rowingHeartRateBeltInformation: RowingHeartRateBeltInformation) {
     let arr:[UInt8] = [
       UInt8(rowingHeartRateBeltInformation.manufacturerID),
       UInt8(rowingHeartRateBeltInformation.deviceType),

@@ -6,11 +6,11 @@
 //
 //
 
-public enum RowingState:Int {
+public enum RowingState: Int {
   case inactive = 0
   case active
   
-  var title:String {
+  var title: String {
     switch self {
     case .inactive:
       return "Inactive"

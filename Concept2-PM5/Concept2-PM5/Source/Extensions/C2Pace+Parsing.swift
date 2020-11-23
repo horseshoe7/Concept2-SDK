@@ -9,8 +9,8 @@
 extension C2Pace {
   /**
    */
-  init(paceWithLow low:UInt16, high:UInt16) {
-    let paceMultiplier:C2Pace = 0.01
+  init(paceWithLow low: UInt16, high: UInt16) {
+    let paceMultiplier: C2Pace = 0.01
     
     self = C2Pace(low | (high << 8)) * paceMultiplier
   }

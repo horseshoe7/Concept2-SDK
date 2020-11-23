@@ -9,5 +9,5 @@
 import Foundation
 
 public struct CSAFECommand {
-  var identifier:String
+  var identifier: String
 }

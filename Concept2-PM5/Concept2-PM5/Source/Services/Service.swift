@@ -18,7 +18,7 @@ public enum Service {
   case control
   case rowing
   
-  init?(uuid:CBUUID) {
+  init?(uuid: CBUUID) {
     switch uuid {
     case Service.deviceDiscovery.UUID:
       self = .deviceDiscovery
@@ -33,7 +33,7 @@ public enum Service {
     }
   }
   
-  var UUID:CBUUID {
+  var UUID: CBUUID {
     switch self {
     case .deviceDiscovery:
       return CBUUID(string: "CE060000-43E5-11E4-916C-0800200C9A66")
@@ -46,7 +46,7 @@ public enum Service {
     }
   }
   
-  var characteristicUUIDs:[CBUUID]? {
+  var characteristicUUIDs: [CBUUID]? {
     switch self {
     case .deviceInformation:
       return [
@@ -77,7 +77,7 @@ public enum Service {
     }
   }
   
-  func characteristic(uuid:CBUUID) -> Characteristic? {
+  func characteristic(uuid: CBUUID) -> Characteristic? {
     switch self {
     case .deviceInformation:
       return DeviceInformationCharacteristic(uuid: uuid)

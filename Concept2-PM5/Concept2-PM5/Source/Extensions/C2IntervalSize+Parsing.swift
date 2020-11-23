@@ -9,7 +9,7 @@
 extension C2IntervalSize {
   /**
    */
-  init(sizeWithLow low:UInt16, high:UInt16) {
+  init(sizeWithLow low: UInt16, high: UInt16) {
     self = C2IntervalSize(low | (high << 8))
   }
 }

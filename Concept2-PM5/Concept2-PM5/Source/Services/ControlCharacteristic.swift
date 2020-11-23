@@ -8,11 +8,11 @@
 
 import CoreBluetooth
 
-public enum ControlCharacteristic:Characteristic {
+public enum ControlCharacteristic: Characteristic {
   case command
   case response
   
-  init?(uuid:CBUUID) {
+  init?(uuid: CBUUID) {
     switch uuid {
     case ControlCharacteristic.command.UUID:
       self = .command
@@ -23,7 +23,7 @@ public enum ControlCharacteristic:Characteristic {
     }
   }
   
-  var UUID:CBUUID {
+  var UUID: CBUUID {
     switch self {
     case .command:
       return CBUUID(string: "CE060021-43E5-11E4-916C-0800200C9A66")
@@ -32,7 +32,7 @@ public enum ControlCharacteristic:Characteristic {
     }
   }
   
-  func parse(data:Data?) -> CharacteristicModel? {
+  func parse(data: Data?) -> CharacteristicModel? {
     switch self {
     case .command:
       return nil

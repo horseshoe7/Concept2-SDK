@@ -8,13 +8,13 @@
 
 import CoreBluetooth
 
-public enum DeviceInformationCharacteristic:Characteristic {
+public enum DeviceInformationCharacteristic: Characteristic {
   case serialNumber
   case hardwareRevision
   case firmwareRevision
   case manufacturerName
   
-  init?(uuid:CBUUID) {
+  init?(uuid: CBUUID) {
     switch uuid {
     case DeviceInformationCharacteristic.serialNumber.UUID:
       self = .serialNumber
@@ -29,7 +29,7 @@ public enum DeviceInformationCharacteristic:Characteristic {
     }
   }
   
-  var UUID:CBUUID {
+  var UUID: CBUUID {
     switch self {
     case .serialNumber:
       return CBUUID(string: "CE060012-43E5-11E4-916C-0800200C9A66")
@@ -42,7 +42,7 @@ public enum DeviceInformationCharacteristic:Characteristic {
     }
   }
   
-  func parse(data:Data?) -> CharacteristicModel? {
+  func parse(data: Data?) -> CharacteristicModel? {
     switch self {
     case .serialNumber:
       return nil

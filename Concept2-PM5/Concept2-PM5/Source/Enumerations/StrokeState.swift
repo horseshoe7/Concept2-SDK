@@ -6,14 +6,14 @@
 //
 //
 
-public enum StrokeState:Int {
+public enum StrokeState: Int {
   case waitingForWheelToReachMinSpeed = 0
   case waitingForWheelToAccelerate
   case driving
   case dwellingAfterDrive
   case recovery
   
-  var title:String {
+  var title: String {
     switch self {
     case .waitingForWheelToReachMinSpeed:
       return "Waiting for wheel to reach minimum speed"

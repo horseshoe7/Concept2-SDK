@@ -13,14 +13,14 @@ public final class PerformanceMonitor
   public static let DidUpdateStateNotification = "PerformanceMonitorDidUpdateStateNotification"
   
   //
-  var peripheral:CBPeripheral
+  var peripheral: CBPeripheral
   lazy var peripheralDelegate = PeripheralDelegate()
   
   // MARK: Basic Information
-  public var peripheralName:String { get { return peripheral.name ?? "Unknown" } }
-  public var peripheralIdentifier:String { get { return peripheral.identifier.uuidString } }
+  public var peripheralName: String { get { return peripheral.name ?? "Unknown" } }
+  public var peripheralIdentifier: String { get { return peripheral.identifier.uuidString } }
   
-  public var isConnected:Bool { get { return (peripheral.state == .connected) } }
+  public var isConnected: Bool { get { return (peripheral.state == .connected) } }
   
   // MARK: Rowing Information
   public let averageCalories = Subject<C2CalorieCount>(value: 0)
@@ -91,7 +91,7 @@ public final class PerformanceMonitor
   public let beltID = Subject<C2HeartRateBeltID>(value: 0)
   
   // MARK: - Initialization
-  init(withPeripheral peripheral:CBPeripheral) {
+  init(withPeripheral peripheral: CBPeripheral) {
     self.peripheral = peripheral
     
     peripheralDelegate.performanceMonitor = self
@@ -157,14 +157,14 @@ public final class PerformanceMonitor
   func updatePeripheralObservers() {
     log.debug("[PerformanceMonitor]updatePeripheralObservers")
     
-    peripheral.services?.forEach({ (service:CBService) -> () in
+    peripheral.services?.forEach({ (service: CBService) -> () in
       log.debug("Requesting notifications for \(service.description)")
       
       if let svc = Service(uuid: service.uuid) {
         peripheral.discoverCharacteristics(svc.characteristicUUIDs,
           for:  service)
         
-        service.characteristics?.forEach({ (characteristic:CBCharacteristic) -> () in
+        service.characteristics?.forEach({ (characteristic: CBCharacteristic) -> () in
           log.debug("\t* \(characteristic)")
           peripheral.setNotifyValue(true, for: characteristic)
         })
@@ -176,7 +176,7 @@ public final class PerformanceMonitor
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // MARK: Equatable
 
-public func ==(lhs:PerformanceMonitor, rhs:PerformanceMonitor) -> Bool {
+public func ==(lhs: PerformanceMonitor, rhs: PerformanceMonitor) -> Bool {
   return (lhs.peripheral == rhs.peripheral)
 }
 

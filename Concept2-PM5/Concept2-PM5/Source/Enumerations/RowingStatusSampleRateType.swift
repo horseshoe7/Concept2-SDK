@@ -6,13 +6,13 @@
 //
 //
 
-public enum RowingStatusSampleRateType:UInt8 {
+public enum RowingStatusSampleRateType: UInt8 {
   case oneSecond = 0
   case halfSecond = 1
   case quarterSecond = 2
   case tenthSecond = 3
   
-  var title:String {
+  var title: String {
     switch self {
     case .oneSecond:
       return "1 sec"

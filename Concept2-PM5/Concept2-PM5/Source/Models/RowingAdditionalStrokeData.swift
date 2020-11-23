@@ -28,12 +28,12 @@ struct RowingAdditionalStrokeData: CharacteristicModel, CustomDebugStringConvert
   Projected Work Distance Hi
   */
   
-  var elapsedTime:C2TimeInterval
-  var strokePower:C2Power
-  var strokeCalories:C2CalorieCount
-  var strokeCount:C2StrokeCount
-  var projectedWorkTime:C2TimeInterval
-  var projectedWorkDistance:C2Distance
+  var elapsedTime: C2TimeInterval
+  var strokePower: C2Power
+  var strokeCalories: C2CalorieCount
+  var strokeCount: C2StrokeCount
+  var projectedWorkTime: C2TimeInterval
+  var projectedWorkDistance: C2Distance
   
   init(fromData data: Data) {
     var arr = [UInt8](repeating: 0, count: DataLength)
@@ -50,7 +50,7 @@ struct RowingAdditionalStrokeData: CharacteristicModel, CustomDebugStringConvert
   }
   
   // MARK: PerformanceMonitor
-  func updatePerformanceMonitor(_ performanceMonitor:PerformanceMonitor) {
+  func updatePerformanceMonitor(_ performanceMonitor: PerformanceMonitor) {
     performanceMonitor.elapsedTime.value = elapsedTime
     performanceMonitor.strokePower.value = strokePower
     performanceMonitor.strokeCalories.value = strokeCalories
@@ -60,7 +60,7 @@ struct RowingAdditionalStrokeData: CharacteristicModel, CustomDebugStringConvert
   }
   
   // MARK: -
-  var debugDescription:String {
+  var debugDescription: String {
     return "[RowingAdditionalStrokeData]"
   }
 }
