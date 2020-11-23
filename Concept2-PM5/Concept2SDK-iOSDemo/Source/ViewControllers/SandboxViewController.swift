@@ -15,12 +15,13 @@ class SandboxViewController: UIViewController {
     var updateTimer: Timer?
     var timerTick = 0
     
-    let interval = TimeInterval(0.1)
+    let interval = TimeInterval(0.01)
     let numIncrementsPerPeriod = TimeInterval(40)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.plotView.baselineValue = 0.0
+        self.plotView.verticalContentMode = .fitFull
         self.plotView.deltaXPerScreenPoint = CGFloat(interval / 5)
     }
     
@@ -40,7 +41,13 @@ class SandboxViewController: UIViewController {
         updateTimer = Timer.scheduledTimer(withTimeInterval: self.interval, repeats: true, block: { [weak self] (_) in
             guard let `self` = self else { return }
             let x: CGFloat = CGFloat(self.interval) * CGFloat(self.timerTick)
-            let y: CGFloat = sin( (x / CGFloat(self.numIncrementsPerPeriod * self.interval)) * 2 * CGFloat.pi)  // 20 is how many points you want on the sine curve
+            
+            // sine wave
+            //let y: CGFloat = sin( (x / CGFloat(self.numIncrementsPerPeriod * self.interval)) * 2 * CGFloat.pi)  // 20 is how many points you want on the sine curve
+            
+            // random +ve scatter plot
+            let y = CGFloat(arc4random_uniform(25) + 75)/100.0
+            
             //log.debug("Append: (\(String(format: "%.2f", x)), \(String(format: "%.2f", y)))")
             self.plotView.append(CGPoint(x: x, y: y))
             self.timerTick += 1

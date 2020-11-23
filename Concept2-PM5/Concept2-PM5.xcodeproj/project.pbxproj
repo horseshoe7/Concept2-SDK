@@ -66,6 +66,8 @@
 		DCF305F72567BD7400D95CB0 /* FrameworkLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305F62567BD7400D95CB0 /* FrameworkLog.swift */; };
 		DCF305FB2567C91D00D95CB0 /* PlotStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305FA2567C91D00D95CB0 /* PlotStripView.swift */; };
 		DCF305FD2567F11700D95CB0 /* SandboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */; };
+		DCF305FF256BC23E00D95CB0 /* PM5DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305FE256BC23E00D95CB0 /* PM5DemoViewController.swift */; };
+		DCF30601256BC3FB00D95CB0 /* CommonColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF30600256BC3FB00D95CB0 /* CommonColorView.swift */; };
 		E0B680549CD8E1F76DF25D62 /* Pods_Concept2SDK_Concept2_PM5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61721C9CACE4C32F25A42C45 /* Pods_Concept2SDK_Concept2_PM5.framework */; };
 /* End PBXBuildFile section */
 
@@ -161,6 +163,8 @@
 		DCF305F82567C1D600D95CB0 /* Concept2-SDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Concept2-SDK.podspec"; path = "../../Concept2-SDK.podspec"; sourceTree = "<group>"; };
 		DCF305FA2567C91D00D95CB0 /* PlotStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotStripView.swift; sourceTree = "<group>"; };
 		DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxViewController.swift; sourceTree = "<group>"; };
+		DCF305FE256BC23E00D95CB0 /* PM5DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PM5DemoViewController.swift; sourceTree = "<group>"; };
+		DCF30600256BC3FB00D95CB0 /* CommonColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +396,7 @@
 				DCF305DF2567BCE800D95CB0 /* ViewController.swift */,
 				DCF305E02567BCE800D95CB0 /* PerformanceMonitorViewController.swift */,
 				DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */,
+				DCF305FE256BC23E00D95CB0 /* PM5DemoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -428,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				DCF305FA2567C91D00D95CB0 /* PlotStripView.swift */,
+				DCF30600256BC3FB00D95CB0 /* CommonColorView.swift */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -726,6 +732,8 @@
 				DCF305ED2567BCE800D95CB0 /* AppDelegate.swift in Sources */,
 				DCF305F42567BD3F00D95CB0 /* ApplicationLog.swift in Sources */,
 				DCF305FD2567F11700D95CB0 /* SandboxViewController.swift in Sources */,
+				DCF30601256BC3FB00D95CB0 /* CommonColorView.swift in Sources */,
+				DCF305FF256BC23E00D95CB0 /* PM5DemoViewController.swift in Sources */,
 				DCF305EC2567BCE800D95CB0 /* PerformanceMonitorViewController.swift in Sources */,
 				DCF305FB2567C91D00D95CB0 /* PlotStripView.swift in Sources */,
 				DCF305EB2567BCE800D95CB0 /* ViewController.swift in Sources */,

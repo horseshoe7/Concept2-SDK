@@ -42,6 +42,143 @@
             <point key="canvasLocation" x="311.25" y="-447.88732394366195"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="dhj-WB-hWK">
+            <objects>
+                <viewController id="hmc-eC-cFb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4mM-P4-Xbk"/>
+                        <viewControllerLayoutGuide type="bottom" id="nfc-S6-xx6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y34-Ig-ZUs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jey-RK-0FH">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM9-9M-aSG" customClass="CommonColorControlView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Yq-oT-YmG" customClass="CommonColorView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="48" width="320" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="kYy-gg-mti"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI6-Cp-JMB" customClass="CommonColorView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="196" width="320" height="4"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="4" id="yiR-n2-rI6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wp-or-YU4" customClass="CommonColorView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="147" width="320" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="P91-BB-Szb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eo1-7W-XRY" customClass="CommonColorView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                                <rect key="frame" x="199" y="0.0" width="1" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="G77-wF-JeS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCN-0K-y1b" customClass="CommonColorView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                                <rect key="frame" x="199" y="148" width="1" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="1" id="k6f-sZ-ZmL"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="wiK-rn-0T2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NX5-aK-xzq" customClass="CommonColorView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="280" width="320" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="GcF-DI-6gE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvF-Tq-URP" customClass="CommonColorView" customModule="Concept2SDK_iOSDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="240" width="320" height="1"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="SjZ-tc-mv8"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Eo1-7W-XRY" firstAttribute="top" secondItem="YM9-9M-aSG" secondAttribute="top" id="0Ty-Ps-loY"/>
+                                            <constraint firstAttribute="bottom" secondItem="NX5-aK-xzq" secondAttribute="bottom" constant="39" id="6NV-Qp-OKU"/>
+                                            <constraint firstItem="3Yq-oT-YmG" firstAttribute="top" secondItem="YM9-9M-aSG" secondAttribute="top" constant="48" id="8A9-d3-qyc"/>
+                                            <constraint firstItem="XI6-Cp-JMB" firstAttribute="leading" secondItem="YM9-9M-aSG" secondAttribute="leading" id="8vS-BE-VxA"/>
+                                            <constraint firstItem="dCN-0K-y1b" firstAttribute="top" secondItem="2Wp-or-YU4" secondAttribute="bottom" id="AHY-u7-pog"/>
+                                            <constraint firstItem="XI6-Cp-JMB" firstAttribute="top" secondItem="2Wp-or-YU4" secondAttribute="bottom" constant="48" id="COf-0z-Kev"/>
+                                            <constraint firstItem="3Yq-oT-YmG" firstAttribute="leading" secondItem="YM9-9M-aSG" secondAttribute="leading" id="Hxw-HY-6tM"/>
+                                            <constraint firstItem="NX5-aK-xzq" firstAttribute="leading" secondItem="YM9-9M-aSG" secondAttribute="leading" id="KXH-Jz-5fB"/>
+                                            <constraint firstAttribute="trailing" secondItem="mvF-Tq-URP" secondAttribute="trailing" id="Kc9-Ql-V85"/>
+                                            <constraint firstItem="NX5-aK-xzq" firstAttribute="top" secondItem="mvF-Tq-URP" secondAttribute="bottom" constant="39" id="Kmv-l1-zBX"/>
+                                            <constraint firstItem="XI6-Cp-JMB" firstAttribute="top" secondItem="YM9-9M-aSG" secondAttribute="top" constant="196" id="M6q-JH-2qq"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Wp-or-YU4" secondAttribute="trailing" id="NJV-0q-WYP"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Yq-oT-YmG" secondAttribute="trailing" id="Ooo-35-rZX"/>
+                                            <constraint firstAttribute="trailing" secondItem="dCN-0K-y1b" secondAttribute="trailing" constant="120" id="W4q-XR-MTM"/>
+                                            <constraint firstAttribute="trailing" secondItem="XI6-Cp-JMB" secondAttribute="trailing" id="X5p-XU-eoq"/>
+                                            <constraint firstAttribute="trailing" secondItem="Eo1-7W-XRY" secondAttribute="trailing" constant="120" id="Z2O-wT-Vya"/>
+                                            <constraint firstAttribute="trailing" secondItem="NX5-aK-xzq" secondAttribute="trailing" id="Zb1-ax-Dwq"/>
+                                            <constraint firstItem="2Wp-or-YU4" firstAttribute="leading" secondItem="YM9-9M-aSG" secondAttribute="leading" id="Zud-iq-FBG"/>
+                                            <constraint firstItem="3Yq-oT-YmG" firstAttribute="top" secondItem="Eo1-7W-XRY" secondAttribute="bottom" id="btS-EU-a9t"/>
+                                            <constraint firstItem="XI6-Cp-JMB" firstAttribute="top" secondItem="dCN-0K-y1b" secondAttribute="bottom" id="lBn-ER-sNM"/>
+                                            <constraint firstItem="mvF-Tq-URP" firstAttribute="leading" secondItem="YM9-9M-aSG" secondAttribute="leading" id="u3V-Bg-q9D"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jey-RK-0FH" secondAttribute="height" multiplier="1:1" id="8bt-si-A7m"/>
+                                    <constraint firstAttribute="bottom" secondItem="YM9-9M-aSG" secondAttribute="bottom" id="U3d-IH-KKI"/>
+                                    <constraint firstItem="YM9-9M-aSG" firstAttribute="leading" secondItem="Jey-RK-0FH" secondAttribute="leading" id="ceY-9N-DYr"/>
+                                    <constraint firstAttribute="trailing" secondItem="YM9-9M-aSG" secondAttribute="trailing" id="gOr-oZ-fbi"/>
+                                    <constraint firstItem="YM9-9M-aSG" firstAttribute="top" secondItem="Jey-RK-0FH" secondAttribute="top" id="xrY-C1-r37"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jey-RK-0FH" firstAttribute="top" secondItem="4mM-P4-Xbk" secondAttribute="bottom" id="IKM-sk-zx4"/>
+                            <constraint firstItem="Jey-RK-0FH" firstAttribute="centerX" secondItem="Y34-Ig-ZUs" secondAttribute="centerX" id="SJq-Ao-uFX"/>
+                            <constraint firstItem="nfc-S6-xx6" firstAttribute="top" secondItem="Jey-RK-0FH" secondAttribute="bottom" id="aS4-Vh-pPo"/>
+                            <constraint firstAttribute="trailing" secondItem="Jey-RK-0FH" secondAttribute="trailing" id="gBV-oT-IxJ"/>
+                            <constraint firstItem="Jey-RK-0FH" firstAttribute="centerX" secondItem="Y34-Ig-ZUs" secondAttribute="centerX" id="lO7-C2-h3Y"/>
+                            <constraint firstItem="Jey-RK-0FH" firstAttribute="centerY" secondItem="Y34-Ig-ZUs" secondAttribute="centerY" id="mIb-M1-zQW"/>
+                            <constraint firstItem="Jey-RK-0FH" firstAttribute="leading" secondItem="Y34-Ig-ZUs" secondAttribute="leading" id="ucJ-kr-EtH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IKM-sk-zx4"/>
+                                <exclude reference="aS4-Vh-pPo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="IKM-sk-zx4"/>
+                                <exclude reference="gBV-oT-IxJ"/>
+                                <exclude reference="lO7-C2-h3Y"/>
+                                <exclude reference="mIb-M1-zQW"/>
+                                <exclude reference="ucJ-kr-EtH"/>
+                                <include reference="aS4-Vh-pPo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5M-eU-EsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.5" y="-450"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Concept2SDK_iOSDemo" customModuleProvider="target" sceneMemberID="viewController">

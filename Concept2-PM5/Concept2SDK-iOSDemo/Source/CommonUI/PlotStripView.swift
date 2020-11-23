@@ -231,8 +231,8 @@ public class PlotStripView: UIView {
             startingX = self.bounds.size.width
         }
         
-        let maxY: CGFloat
-        let minY: CGFloat
+        var maxY: CGFloat = 0
+        var minY: CGFloat = 0
         
         if self.verticalContentMode == .clamp {
             maxY = self.maxY
@@ -240,8 +240,24 @@ public class PlotStripView: UIView {
         } else {
             // go through the data array and find the largest and smallest Y
             let values = self.data.array.compactMap({ $0 })
-            maxY = values.reduce(-CGFloat.greatestFiniteMagnitude) { $1.y > $0 ? $1.y : $0 }
-            minY = values.reduce(CGFloat.greatestFiniteMagnitude) { $1.y < $0 ? $1.y : $0 }
+            let maximum: Float = Float(values.reduce(-CGFloat.greatestFiniteMagnitude) { $1.y > $0 ? $1.y : $0 })
+            let minimum: Float = Float(values.reduce(CGFloat.greatestFiniteMagnitude) { $1.y < $0 ? $1.y : $0 })
+            
+            let crossesZero = minimum < 0
+            
+            let multiplyMax: Float = maximum >= 0 ? 1.0 : -1.0
+            let multiplyMin: Float = minimum >= 0 ? 1.0 : -1.0
+            
+            maxY = CGFloat(max(fabsf(maximum), fabsf(minimum)) * multiplyMax)
+            minY = crossesZero ? CGFloat(max(fabsf(maximum), fabsf(minimum)) * multiplyMin) : 0.0
+            
+            if self.verticalContentMode == .fitFull {
+                if maxY > 0 && minY > 0 {
+                    minY = 0.0
+                } else if maxY < 0 && minY < 0 {
+                    maxY = 0.0
+                }
+            }
         }
         
         // reversed enumerated means index == 0 is the last element in the _data array and as index increases
@@ -313,12 +329,12 @@ public struct RingBuffer<T> {
     public func forEach(each: ((_ indexFromCurrent: Int, _ element: T) -> Bool)) {
         // you basically want to start at writeIndex and go backwards
         
-        let copiedArray = array
+        let copiedArray = array  // we use a copy to take a snapshot
         var startIndex = writeIndex  // gets decremented in for loop
         
         var indexFromCurrent = 0
         let count = copiedArray.count
-        enumeration: for i in 0..<count {
+        enumeration: for _ in 0..<count {
 
             startIndex = startIndex - 1
             if startIndex < 0 {
