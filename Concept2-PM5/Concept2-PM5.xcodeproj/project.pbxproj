@@ -68,6 +68,8 @@
 		DCF305FD2567F11700D95CB0 /* SandboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */; };
 		DCF305FF256BC23E00D95CB0 /* PM5DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF305FE256BC23E00D95CB0 /* PM5DemoViewController.swift */; };
 		DCF30601256BC3FB00D95CB0 /* CommonColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF30600256BC3FB00D95CB0 /* CommonColorView.swift */; };
+		DCF30603256CFEB500D95CB0 /* Concept2_PM5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF305272567B88900D95CB0 /* Concept2_PM5.framework */; };
+		DCF30604256CFEB500D95CB0 /* Concept2_PM5.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DCF305272567B88900D95CB0 /* Concept2_PM5.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E0B680549CD8E1F76DF25D62 /* Pods_Concept2SDK_Concept2_PM5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61721C9CACE4C32F25A42C45 /* Pods_Concept2SDK_Concept2_PM5.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,20 @@
 			remoteInfo = "Concept2-PM5";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCF30607256CFEB600D95CB0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DCF30604256CFEB500D95CB0 /* Concept2_PM5.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		21CCCF8A320E1457D4E16721 /* Pods-Concept2-PM5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Concept2-PM5Tests.release.xcconfig"; path = "Target Support Files/Pods-Concept2-PM5Tests/Pods-Concept2-PM5Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +181,7 @@
 		DCF305FC2567F11700D95CB0 /* SandboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxViewController.swift; sourceTree = "<group>"; };
 		DCF305FE256BC23E00D95CB0 /* PM5DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PM5DemoViewController.swift; sourceTree = "<group>"; };
 		DCF30600256BC3FB00D95CB0 /* CommonColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColorView.swift; sourceTree = "<group>"; };
+		DCF30602256BEEFC00D95CB0 /* ToDo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E474D3E5E03123D38233F9 /* Pods_Concept2SDK_Concept2SDK_iOSDemo.framework in Frameworks */,
+				DCF30603256CFEB500D95CB0 /* Concept2_PM5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +240,7 @@
 		DCF3051D2567B88900D95CB0 = {
 			isa = PBXGroup;
 			children = (
+				DCF30602256BEEFC00D95CB0 /* ToDo.txt */,
 				DCF305DC2567BAF800D95CB0 /* Podfile */,
 				DCF305462567B8A900D95CB0 /* Concept2SDK-iOSDemo */,
 				DCF305292567B88900D95CB0 /* Concept2-PM5 */,
@@ -499,6 +518,7 @@
 				DCF305422567B8A900D95CB0 /* Frameworks */,
 				DCF305432567B8A900D95CB0 /* Resources */,
 				782DB1C6BD9ADD1205EFF90E /* [CP] Embed Pods Frameworks */,
+				DCF30607256CFEB600D95CB0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -907,6 +927,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Concept2-PM5/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -932,6 +953,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Concept2-PM5/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -993,6 +1015,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z76RWC6PEN;
 				INFOPLIST_FILE = "Concept2SDK-iOSDemo/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1012,6 +1035,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z76RWC6PEN;
 				INFOPLIST_FILE = "Concept2SDK-iOSDemo/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

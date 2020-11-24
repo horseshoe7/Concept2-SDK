@@ -1,0 +1,11 @@
+To Do
+=====
+
+
+- Investigate using NFC to facilitate connection over bluetooth.
+    -> see here: https://www.concept2.com/files/pdf/us/monitors/PM5_BluetoothSmartInterfaceDefinition.pdf
+    -> revision 1.27, page 33  (Near Field Communication NDEF Record)
+    
+- Ensure you understand the units given in Types.swift.  Not all are commented.
+
+- Look into writing the update interval (see p. 13, rev 1.27, link above)

@@ -45,13 +45,13 @@ public typealias C2IntervalCount = Int
 /** The size of the current interval group. */
 public typealias C2IntervalSize = Int
 
-/** . */
+/** seconds / 500m */
 public typealias C2Pace = Double
 
-/** . */
+/** in Watts */
 public typealias C2Power = Int
 
-/** . */
+/** Given in metres/second */
 public typealias C2Speed = Double
 
 /** Count of strokes. */
